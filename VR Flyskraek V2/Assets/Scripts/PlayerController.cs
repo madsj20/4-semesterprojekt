@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
-        Invoke("resetPosition", 1);
+        Invoke("resetPosition", 0.5f);
     }
 
 

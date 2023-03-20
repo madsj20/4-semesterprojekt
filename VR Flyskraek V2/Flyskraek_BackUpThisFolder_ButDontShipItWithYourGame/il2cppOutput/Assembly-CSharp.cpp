@@ -1026,8 +1026,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Start_m1D83076E8B136A71
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Invoke("resetPosition", 1);
-		MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB(__this, _stringLiteralCF488641CAD07C1D27544BE04B2265864B03D100, (1.0f), NULL);
+		// Invoke("resetPosition", 0.5f);
+		MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB(__this, _stringLiteralCF488641CAD07C1D27544BE04B2265864B03D100, (0.5f), NULL);
 		// }
 		return;
 	}
