@@ -1,0 +1,25 @@
+# List of SDK dependencies of this app, this information is also included in an encrypted form in the APK.
+# For more information visit: https://d.android.com/r/tools/dependency-metadata
+
+library {
+  maven_library {
+    artifactId: "MicrosoftGeospatialDecompressionNative"
+  }
+  digests {
+    sha256: "\233\336\a\360\275\317\310\265\277\341\353\360\334\314\n_\314NC\025\340\017\326\021\240\306N\361\256g=\207"
+  }
+}
+library {
+  digests {
+    sha256: "\306\237\027\276%\2620\352\242\212\264\370\361486\326\304\266\345\t\343\331\031\f\315`\245\006M\025\350"
+  }
+}
+library_dependencies {
+}
+library_dependencies {
+  library_index: 1
+}
+module_dependencies {
+  module_name: "base"
+  dependency_index: 1
+}
