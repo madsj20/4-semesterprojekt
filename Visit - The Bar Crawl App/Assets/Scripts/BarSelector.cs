@@ -7,7 +7,6 @@ using Microsoft.Geospatial;
 
 public class BarSelector : MonoBehaviour
 {
-    [SerializeField]
     public List<GameObject> barer = new List<GameObject>();
     public string[] drinks = new string[] { "Draft beer", "Mojito", "Gin Hass", "Bottle beer", "Shot", "Vodka Redbull" };
 
