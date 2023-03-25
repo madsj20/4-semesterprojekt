@@ -1030,7 +1030,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 800d3ea93744832c3e983c8dfd943fe2
+      Hash: bbda25995a110af8952ab3e5bd81e6ce
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BarSelector
@@ -1176,5 +1176,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Map.unity
-  playerPath: D:/Unity Projekter/4. Semester/Virtual and Augmentet reality 1/Lektion
-    5/MapTest.apk
+  playerPath: D:/Unity Projekter/4. Semester/4. Semesterprojekt VR/4-semesterprojekt/Visit
+    - The Bar Crawl App/Visit!.apk

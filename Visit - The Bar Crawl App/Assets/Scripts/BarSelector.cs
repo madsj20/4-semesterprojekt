@@ -8,7 +8,8 @@ using Microsoft.Geospatial;
 public class BarSelector : MonoBehaviour
 {
     public List<GameObject> barer = new List<GameObject>();
-    public string[] drinks = new string[] { "Draft beer", "Mojito", "Gin Hass", "Bottle beer", "Shot", "Vodka Redbull" };
+    private string[] drinks = new string[] { "Opvarming", "Flaske øl med sidevogn", "Fadøl", "Flaske øl", "Flaske/Lille special øl", "Mojito", "Blå Thor" };
+    private int[] antalTårer = new int[] { 200, 7, 8, 5, 6, 5, 5 };
 
     [SerializeField]
     private int barNr = 0;
@@ -26,8 +27,10 @@ public class BarSelector : MonoBehaviour
     {
         //Updates text first time
         barText.text = "Next bar: " + barer[barNr].name;
-        savedDrink = drinks[Random.Range(0, drinks.Length)];
+        //savedDrink = drinks[Random.Range(0, drinks.Length)];
+        savedDrink = drinks[barNr];
         drinkText.text = "Next drink: " + savedDrink;
+        Debug.Log(savedDrink);
         //Disables every bar at start
         for (int i = 0; i < barer.Count; i++)
         {
@@ -58,7 +61,8 @@ public class BarSelector : MonoBehaviour
         if (barNr < barer.Count)
         {
             currentLocationText.text = barer[barNr].name;
-            currentDrinkText.text = savedDrink;
+            //currentDrinkText.text = savedDrink;
+            savedDrink = drinks[barNr];
             barText.text = "Next bar: " + barer[barNr+1].name;
             savedDrink = drinks[Random.Range(0, drinks.Length)];
             drinkText.text = "Next drink: " + savedDrink;
@@ -67,6 +71,7 @@ public class BarSelector : MonoBehaviour
             barNr++;
             barer[barNr].GetComponent<MapPin>().enabled = true;
             barer[barNr].SetActive(true);
+            Debug.Log(savedDrink);
             Debug.Log(barNr);
         }
     }
