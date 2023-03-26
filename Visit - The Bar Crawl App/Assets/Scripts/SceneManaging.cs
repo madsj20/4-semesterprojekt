@@ -27,4 +27,14 @@ public class SceneManaging : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void Rules()
+    {
+        SceneManager.LoadScene("Rules");
+    }
+
+    public void Daniel()
+    {
+        SceneManager.LoadScene("Daniel");
+    }
+
 }

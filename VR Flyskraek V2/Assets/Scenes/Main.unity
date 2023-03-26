@@ -12733,15 +12733,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232958801}
     m_Modifications:
+    - target: {fileID: 7354014333481708249, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7354014333481708250, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: followSpeed
-      value: 1800
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7354014333481708250, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: rotateSpeed
-      value: 6000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7354014333481708250, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
@@ -12756,17 +12761,17 @@ PrefabInstance:
     - target: {fileID: 7354014333481708250, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: positionOffset.x
-      value: -0.0909647
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 7354014333481708250, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: positionOffset.y
-      value: 0.05596161
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7354014333481708250, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: positionOffset.z
-      value: -0.09346867
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7354014333481708250, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
@@ -12776,12 +12781,12 @@ PrefabInstance:
     - target: {fileID: 7354014334082638189, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: followSpeed
-      value: 1800
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7354014334082638189, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: rotateSpeed
-      value: 6000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7354014334082638189, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
@@ -12796,22 +12801,27 @@ PrefabInstance:
     - target: {fileID: 7354014334082638189, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: positionOffset.x
-      value: -0.08896465
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 7354014334082638189, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: positionOffset.y
-      value: 0.05596161
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7354014334082638189, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: positionOffset.z
-      value: -0.09346867
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7354014334082638189, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
       propertyPath: rotationOffset.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354014334198901997, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7354014334690237708, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
         type: 3}
@@ -12872,6 +12882,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696613019285806137, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f22c3d8bf0ff084bbdf4aa1d1367b3b, type: 3}

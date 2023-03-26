@@ -80,7 +80,19 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: SceneManaging
+    methodName: Rules
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneManaging
+    methodName: Daniel
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneManaging
     methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneManaging
+    methodName: Menu
+  - assembly: Assembly-CSharp
+    fullTypeName: BarSelector
+    methodName: AddSip
   - assembly: Assembly-CSharp
     fullTypeName: SceneManaging
     methodName: Menu
@@ -91,12 +103,83 @@ ScriptsOnlyBuild:
     fullTypeName: GPS
     methodName: DisableScreenCenter
   - assembly: Assembly-CSharp
+    fullTypeName: BarSelector
+    methodName: RemoveSip
+  - assembly: Assembly-CSharp
+    fullTypeName: BarSelector
+    methodName: ToggleResults
+  - assembly: Assembly-CSharp
     fullTypeName: GPS
     methodName: SetScreenLocation
   - assembly: Assembly-CSharp
     fullTypeName: GPS
     methodName: ToggleScreenCenter
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneManaging
+    methodName: Menu
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneManaging
+    methodName: Menu
   sceneClasses:
+    Assets/Scenes/Daniel.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1616}
+    - Class: 114
+      Script: {instanceID: 2330}
+    - Class: 114
+      Script: {instanceID: 2620}
+    - Class: 114
+      Script: {instanceID: 2822}
+    - Class: 114
+      Script: {instanceID: 3106}
+    - Class: 114
+      Script: {instanceID: 5056}
+    - Class: 114
+      Script: {instanceID: 5600}
+    - Class: 114
+      Script: {instanceID: 5746}
+    - Class: 114
+      Script: {instanceID: 6066}
+    - Class: 114
+      Script: {instanceID: 6622}
+    - Class: 114
+      Script: {instanceID: 6638}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Map.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -231,6 +314,65 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4124}
     - Class: 114
       Script: {instanceID: 4374}
+    - Class: 114
+      Script: {instanceID: 5056}
+    - Class: 114
+      Script: {instanceID: 5600}
+    - Class: 114
+      Script: {instanceID: 5746}
+    - Class: 114
+      Script: {instanceID: 6066}
+    - Class: 114
+      Script: {instanceID: 6622}
+    - Class: 114
+      Script: {instanceID: 6638}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Rules.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1616}
+    - Class: 114
+      Script: {instanceID: 2330}
+    - Class: 114
+      Script: {instanceID: 2620}
+    - Class: 114
+      Script: {instanceID: 2822}
+    - Class: 114
+      Script: {instanceID: 3106}
     - Class: 114
       Script: {instanceID: 5056}
     - Class: 114
@@ -1030,7 +1172,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: bbda25995a110af8952ab3e5bd81e6ce
+      Hash: 1534d4b6c7a7bb49bce7433ddb597772
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BarSelector
@@ -1176,5 +1318,7 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Map.unity
+  - Assets/Scenes/Rules.unity
+  - Assets/Scenes/Daniel.unity
   playerPath: D:/Unity Projekter/4. Semester/4. Semesterprojekt VR/4-semesterprojekt/Visit
     - The Bar Crawl App/Visit!.apk

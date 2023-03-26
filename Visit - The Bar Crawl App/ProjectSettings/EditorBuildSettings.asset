@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Rules.unity
+    guid: d7f740c1dc8818f499b4f5821f350936
+  - enabled: 1
+    path: Assets/Scenes/Daniel.unity
+    guid: 4887eea64522f9f4c9d821b7f522967b
   m_configObjects: {}
