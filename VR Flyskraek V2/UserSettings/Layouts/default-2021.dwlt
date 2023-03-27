@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 34
+  controlID: 49
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimationWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -121,16 +121,16 @@ MonoBehaviour:
     y: 674.6667
     width: 1319.3334
     height: 249.33331
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 22}
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 3
-  m_LastSelected: 1
+  m_Selected: 0
+  m_LastSelected: 3
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 24
+  controlID: 88
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 25
+  controlID: 89
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 1019.3334
     height: 674.6667
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -312,7 +312,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -20144
+  m_LastSelectedObjectID: -20466
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1241,13 +1241,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Animation
+    - Assets/Materials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Animation
+  - Assets/Materials
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Unity Projekter\4. Semester\4. Semesterprojekt VR\4-semesterprojekt\VR
     Flyskraek V2
@@ -1255,9 +1255,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 83.66669}
-    m_SelectedIDs: 3ccf0000
-    m_LastClickedID: 53052
-    m_ExpandedIDs: 00000000c4c20000c6c20000c8c20000cac20000ccc20000cec20000d0c20000d2c20000
+    m_SelectedIDs: 1ac70000
+    m_LastClickedID: 50970
+    m_ExpandedIDs: 00000000a8c40000aac40000acc40000aec40000b0c40000b2c40000b4c40000b6c4000022c7000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1285,7 +1285,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c4c20000c6c20000c8c20000cac20000ccc20000cec20000d0c20000d2c20000
+    m_ExpandedIDs: 00000000a8c40000aac40000acc40000aec40000b0c40000b2c40000b4c40000b6c40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1415,9 +1415,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 50b1ffff
-      m_LastClickedID: -20144
-      m_ExpandedIDs: 9ab0ffff9eb0ffffa2b0ffffbcb0ffffc0b0ffffc4b0ffffdeb0ffffe2b0ffffe6b0ffffeab0ffff04b1ffff08b1ffff0cb1ffff22b1ffff26b1ffff2ab1ffff2eb1ffff3ab1ffff3eb1ffff50b1ffff54b1ffff2cfbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: eebefdff3abffdff38c5fdffcc10feff1423feff6023feff5e29fefff274feff8c7efeffda7efeffd684feff6ad0feff84fafeffbc43fffff446ffff4247ffff264fffffbe9affff0eb0ffffaeb0ffffe6f9ffffc61a0100ca1a0100361b0100286d010064080200820b020086140200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1700,9 +1700,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -29.233912, y: 32.309105, z: -13.182368}
+    m_Target: {x: -25.624414, y: 31.28704, z: -12.911394}
     speed: 2
-    m_Value: {x: -29.233912, y: 32.309105, z: -13.182368}
+    m_Value: {x: -25.624414, y: 31.28704, z: -12.911394}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1749,13 +1749,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.020489268, y: 0.73195773, z: -0.022047652, w: 0.6808062}
+    m_Target: {x: 0.20490582, y: 0.60170573, z: -0.16332519, w: 0.75464714}
     speed: 2
-    m_Value: {x: 0.021508496, y: 0.7318634, z: -0.02314382, w: 0.68071854}
+    m_Value: {x: 0.2051297, y: 0.6005119, z: -0.16300105, w: 0.75547194}
   m_Size:
-    m_Target: 0.72872895
+    m_Target: 0.26663134
     speed: 2
-    m_Value: 0.72872895
+    m_Value: 0.2551496
   m_Ortho:
     m_Target: 0
     speed: 2
