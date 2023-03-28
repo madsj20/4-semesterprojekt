@@ -377,7 +377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 493.8}
+  m_AnchoredPosition: {x: 0, y: 392}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444646361
@@ -400,16 +400,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ved hver huld er der en drink der skal drikkes i x antal t\xE5re \r\nHoldet
-    med lavest score til sidst vinder\r\nDer er 2 water hazards p\xE5 ruten  \r\nDer
-    skal tages et hold foto gennem aftenen bedste f\xE5r -3 til slut\r\nTaberholdet
-    river en drik til resten \r\nMan har 25 min p\xE5 hvert huld til at drikke drikken
-    \r\n\nMan f\xE5r:\r\n+2 for at misse huldet \r\n+1 for at bruge toilettet ved
-    et water hazard\r\n+2 for at falde\r\n+5 for at blive fanget i at snyde\r\n+1
-    for at spilde sin eller en andens drink\r\n+2 for ikke at drikke med sin partner
-    \r\n+3 for ikke at n\xE5 at drikke drikken inden tidsperioden \r\n+10 for at
-    kaste op\r\n-3 for at kysse en der ikke er med i gruppen\r\n-1 f\xE5 en der ikke
-    er med i gruppen til at k\xF8be dig drikken"
+  m_text: "Man g\xE5r fra bar til bar, hvor der bliver k\xF8bt en genstand.\nHvis
+    man kan holde til det kan man k\xF8be mere per stop, men husk der er 10 stop.\n\nGod
+    tur!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -436,8 +429,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

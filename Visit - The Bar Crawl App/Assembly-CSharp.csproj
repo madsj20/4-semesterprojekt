@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Permissions.cs" />
     <Compile Include="Assets\Scripts\SceneManaging.cs" />
     <Compile Include="Assets\Scripts\BarSelector.cs" />
+    <Compile Include="Assets\Scripts\BackupBarSelector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

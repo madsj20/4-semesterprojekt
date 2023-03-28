@@ -91,9 +91,6 @@ ScriptsOnlyBuild:
     fullTypeName: SceneManaging
     methodName: Menu
   - assembly: Assembly-CSharp
-    fullTypeName: BarSelector
-    methodName: AddSip
-  - assembly: Assembly-CSharp
     fullTypeName: SceneManaging
     methodName: Menu
   - assembly: Assembly-CSharp
@@ -102,12 +99,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: GPS
     methodName: DisableScreenCenter
-  - assembly: Assembly-CSharp
-    fullTypeName: BarSelector
-    methodName: RemoveSip
-  - assembly: Assembly-CSharp
-    fullTypeName: BarSelector
-    methodName: ToggleResults
   - assembly: Assembly-CSharp
     fullTypeName: GPS
     methodName: SetScreenLocation
@@ -143,27 +134,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2332}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2622}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 5600}
+      Script: {instanceID: 5602}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 6066}
+      Script: {instanceID: 6068}
     - Class: 114
-      Script: {instanceID: 6622}
+      Script: {instanceID: 6624}
     - Class: 114
-      Script: {instanceID: 6638}
+      Script: {instanceID: 6640}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -212,49 +203,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 2130}
+      Script: {instanceID: 2132}
     - Class: 114
-      Script: {instanceID: 2148}
+      Script: {instanceID: 2150}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2332}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2622}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 3398}
-    - Class: 114
-      Script: {instanceID: 3478}
+      Script: {instanceID: 3400}
     - Class: 114
       Script: {instanceID: 3480}
     - Class: 114
       Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 5104}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 5600}
+      Script: {instanceID: 5106}
     - Class: 114
-      Script: {instanceID: 5612}
+      Script: {instanceID: 5602}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 6066}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 6144}
+      Script: {instanceID: 6068}
     - Class: 114
-      Script: {instanceID: 6638}
+      Script: {instanceID: 6146}
     - Class: 114
-      Script: {instanceID: 6694}
+      Script: {instanceID: 6640}
     - Class: 114
-      Script: {instanceID: 7250}
+      Script: {instanceID: 6696}
+    - Class: 114
+      Script: {instanceID: 7252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -299,33 +290,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2332}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2622}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 4124}
+      Script: {instanceID: 4126}
     - Class: 114
-      Script: {instanceID: 4374}
+      Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 5600}
+      Script: {instanceID: 5602}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 6066}
+      Script: {instanceID: 6068}
     - Class: 114
-      Script: {instanceID: 6622}
+      Script: {instanceID: 6624}
     - Class: 114
-      Script: {instanceID: 6638}
+      Script: {instanceID: 6640}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -364,27 +355,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2332}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2622}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 5600}
+      Script: {instanceID: 5602}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 6066}
+      Script: {instanceID: 6068}
     - Class: 114
-      Script: {instanceID: 6622}
+      Script: {instanceID: 6624}
     - Class: 114
-      Script: {instanceID: 6638}
+      Script: {instanceID: 6640}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1172,7 +1163,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 1534d4b6c7a7bb49bce7433ddb597772
+      Hash: f78de5d4355c855caa3922cd7a1689a2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BarSelector
@@ -1314,6 +1305,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 1534d4b6c7a7bb49bce7433ddb597772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackupBarSelector
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
