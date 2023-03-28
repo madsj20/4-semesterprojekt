@@ -1,4 +1,4 @@
-#Tue Mar 28 20:46:26 CEST 2023
+#Tue Mar 28 21:02:24 CEST 2023
 base.0=D\:\\Unity Projekter\\4. Semester\\4. Semesterprojekt VR\\4-semesterprojekt\\Visit - The Bar Crawl App\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
