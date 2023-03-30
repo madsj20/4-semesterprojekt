@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ButtonEvents : MonoBehaviour
 {
     public GameObject image;
+    public AudioSource sound;
 
     void Start()
     {
@@ -24,5 +26,12 @@ public class ButtonEvents : MonoBehaviour
     public void HideImage()
     {
         image.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
+
+
+    public void PlaySound()
+    {
+        sound.Play();
     }
 }
