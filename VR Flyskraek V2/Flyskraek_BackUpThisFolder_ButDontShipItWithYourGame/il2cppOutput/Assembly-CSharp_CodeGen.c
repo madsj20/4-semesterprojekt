@@ -90,35 +90,47 @@ extern void HMDInfoManger_Start_m2365C7483A93F02C62EFBF03A4A2F4EB9477C4DE (void)
 extern void HMDInfoManger_Update_mA2DAF0F4FA60D00BAF60E58795D695B2A66D8B9F (void);
 // 0x00000027 System.Void HMDInfoManger::.ctor()
 extern void HMDInfoManger__ctor_m0A47794B39E8B67669CDB6605566EB64BA712B93 (void);
-// 0x00000028 System.Void PhysicsButton::Start()
+// 0x00000028 System.Void Intro::Start()
+extern void Intro_Start_mED069CCBF90D9C9297AB1A2950428FA6B84A8A64 (void);
+// 0x00000029 System.Void Intro::Update()
+extern void Intro_Update_m05AD393689ADBC5D1EEE010ECC64CFB1AEF36C00 (void);
+// 0x0000002A System.Void Intro::NextScene()
+extern void Intro_NextScene_m06CBBE96C9D8B3EE3D26CA242C765E9A83CB3E73 (void);
+// 0x0000002B System.Void Intro::.ctor()
+extern void Intro__ctor_m7D4DB3A66688C059CF001AE68699BE1E51CAE3DE (void);
+// 0x0000002C System.Void LightToggle::ToggleLight()
+extern void LightToggle_ToggleLight_mF4BD1547BB8E75C56A384185929D6570F67B5EF4 (void);
+// 0x0000002D System.Void LightToggle::.ctor()
+extern void LightToggle__ctor_m3962F236C8AAC9650ABC953B44751475AE22924C (void);
+// 0x0000002E System.Void PhysicsButton::Start()
 extern void PhysicsButton_Start_mD7FF728688E94350441F3C4DF550E1B3B75FBC7F (void);
-// 0x00000029 System.Void PhysicsButton::Update()
+// 0x0000002F System.Void PhysicsButton::Update()
 extern void PhysicsButton_Update_m6E8CFA7843AA63E629BACBBC6E37D9E6D5A47DAD (void);
-// 0x0000002A System.Single PhysicsButton::GetValue()
+// 0x00000030 System.Single PhysicsButton::GetValue()
 extern void PhysicsButton_GetValue_mBFDF14F600CC337F3225B111B54B68FC25CBDA00 (void);
-// 0x0000002B System.Void PhysicsButton::Pressed()
+// 0x00000031 System.Void PhysicsButton::Pressed()
 extern void PhysicsButton_Pressed_mAE854AE66F324963289A4E0FB2B6FCDB3714E576 (void);
-// 0x0000002C System.Void PhysicsButton::Released()
+// 0x00000032 System.Void PhysicsButton::Released()
 extern void PhysicsButton_Released_m18E01692513EDA624AB91A2BCB0BC0C80A7DAA9C (void);
-// 0x0000002D System.Void PhysicsButton::.ctor()
+// 0x00000033 System.Void PhysicsButton::.ctor()
 extern void PhysicsButton__ctor_m0AF74E2760D4D820B3D6AC03D96C384EC90FEBBC (void);
-// 0x0000002E System.Void PlayerController::Awake()
+// 0x00000034 System.Void PlayerController::Awake()
 extern void PlayerController_Awake_m82639826DE098DC447C79B43900C5F2A630B3DC3 (void);
-// 0x0000002F System.Void PlayerController::OnDestroy()
+// 0x00000035 System.Void PlayerController::OnDestroy()
 extern void PlayerController_OnDestroy_mBACF79169C488FF036B4FFA236852D6605281EFF (void);
-// 0x00000030 System.Void PlayerController::Start()
+// 0x00000036 System.Void PlayerController::Start()
 extern void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (void);
-// 0x00000031 System.Void PlayerController::resetPosition()
+// 0x00000037 System.Void PlayerController::resetPosition()
 extern void PlayerController_resetPosition_mD02735A2318EA4963D63AD8FC107FB8D5FBDD13B (void);
-// 0x00000032 System.Void PlayerController::resetPosition(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000038 System.Void PlayerController::resetPosition(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void PlayerController_resetPosition_mAF5DCFB3DD220CC83DFC416C0213E3F699330655 (void);
-// 0x00000033 System.Void PlayerController::.ctor()
+// 0x00000039 System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x00000034 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x0000003A System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x00000035 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x0000003B System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-static Il2CppMethodPointer s_methodPointers[53] = 
+static Il2CppMethodPointer s_methodPointers[59] = 
 {
 	Hand_Start_mF97170CC92093DE16E9DD633908D8FF76D6386DB,
 	Hand_FixedUpdate_mDE5734168E9833CD0FE927CEFEE557EB31BDC133,
@@ -159,6 +171,12 @@ static Il2CppMethodPointer s_methodPointers[53] =
 	HMDInfoManger_Start_m2365C7483A93F02C62EFBF03A4A2F4EB9477C4DE,
 	HMDInfoManger_Update_mA2DAF0F4FA60D00BAF60E58795D695B2A66D8B9F,
 	HMDInfoManger__ctor_m0A47794B39E8B67669CDB6605566EB64BA712B93,
+	Intro_Start_mED069CCBF90D9C9297AB1A2950428FA6B84A8A64,
+	Intro_Update_m05AD393689ADBC5D1EEE010ECC64CFB1AEF36C00,
+	Intro_NextScene_m06CBBE96C9D8B3EE3D26CA242C765E9A83CB3E73,
+	Intro__ctor_m7D4DB3A66688C059CF001AE68699BE1E51CAE3DE,
+	LightToggle_ToggleLight_mF4BD1547BB8E75C56A384185929D6570F67B5EF4,
+	LightToggle__ctor_m3962F236C8AAC9650ABC953B44751475AE22924C,
 	PhysicsButton_Start_mD7FF728688E94350441F3C4DF550E1B3B75FBC7F,
 	PhysicsButton_Update_m6E8CFA7843AA63E629BACBBC6E37D9E6D5A47DAD,
 	PhysicsButton_GetValue_mBFDF14F600CC337F3225B111B54B68FC25CBDA00,
@@ -174,67 +192,73 @@ static Il2CppMethodPointer s_methodPointers[53] =
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 };
-static const int32_t s_InvokerIndices[53] = 
+static const int32_t s_InvokerIndices[59] = 
 {
-	4510,
-	4510,
-	4510,
-	3606,
-	3606,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	3673,
-	3606,
-	4510,
-	1986,
-	3573,
-	3573,
-	4510,
-	4510,
-	4510,
-	4510,
-	1986,
-	4510,
-	4510,
-	3573,
-	3573,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4456,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	4510,
-	3673,
-	4510,
-	4510,
-	4510,
+	4751,
+	4751,
+	4751,
+	3791,
+	3791,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	3869,
+	3791,
+	4751,
+	2064,
+	3757,
+	3757,
+	4751,
+	4751,
+	4751,
+	4751,
+	2064,
+	4751,
+	4751,
+	3757,
+	3757,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4687,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	4751,
+	3869,
+	4751,
+	4751,
+	4751,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	53,
+	59,
 	s_methodPointers,
 	0,
 	NULL,

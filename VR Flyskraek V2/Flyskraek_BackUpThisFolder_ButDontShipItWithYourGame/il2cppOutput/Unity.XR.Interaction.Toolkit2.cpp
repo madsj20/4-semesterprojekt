@@ -213,6 +213,8 @@ struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8;
 struct RaycastResultU5BU5D_tEAF6B3C3088179304676571328CBB001D8CECBC7;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 // System.UInt32[]
 struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
 // UnityEngine.Vector3[]
@@ -634,6 +636,7 @@ struct InputDeviceU5BU5D_tA9AEFC6AF63557D3D5DCFB2B26DDA6F63147D548;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8;
 struct RaycastResultU5BU5D_tEAF6B3C3088179304676571328CBB001D8CECBC7;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct RegisteredInteractorU5BU5D_t33AC6CD1C7F2D832B7436B5E1F4F4914E9F078B7;
 struct RegisteredTouchU5BU5D_tC266F7A4629252045ECEBE7BFA7219C15AF92FD7;
 
@@ -5493,6 +5496,41 @@ struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8  : public Runt
 		m_Items[index] = value;
 	}
 };
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // UnityEngine.InputSystem.InputDevice[]
 struct InputDeviceU5BU5D_tA9AEFC6AF63557D3D5DCFB2B26DDA6F63147D548  : public RuntimeArray
 {
@@ -6561,6 +6599,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseModel_set_middleButtonPressed_mF1E5EA114314006CDD15F484FCE7450F3D3B0A39 (MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule::ProcessMouse(UnityEngine.XR.Interaction.Toolkit.UI.MouseModel&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIInputModule_ProcessMouse_mF90F8EA789274FCD298E5ED801EE9675A9E3EEA4 (UIInputModule_t9F252B720B55B1976F4B2A1D2726E3D3D46781F7* __this, MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* ___mouseState0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Input::get_mousePresent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_get_mousePresent_mAD77FFD987CD5B998AFAD4DAECADBC76034026BF (const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Input::get_mousePosition()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C (const RuntimeMethod* method) ;
+// UnityEngine.Vector2 UnityEngine.Input::get_mouseScrollDelta()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Input_get_mouseScrollDelta_mD112408E9182AA0F529179FF31E21D8DCD5CFA74 (const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA (int32_t ___button0, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Input::get_touchCount()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39 (const RuntimeMethod* method) ;
 // UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
@@ -6619,6 +6665,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GamepadModel_set_cancelButtonDown_mF13195D2D11D9371BDC1310B58075B7D93626F84 (GamepadModel_t90941A6415CB6C355A83B1AB7E939D06814A1EE3* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule::ProcessGamepad(UnityEngine.XR.Interaction.Toolkit.UI.GamepadModel&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIInputModule_ProcessGamepad_m4CAB4ED476E35FF67CF895157F3DDA8DDC456AB9 (UIInputModule_t9F252B720B55B1976F4B2A1D2726E3D3D46781F7* __this, GamepadModel_t90941A6415CB6C355A83B1AB7E939D06814A1EE3* ___gamepadState0, const RuntimeMethod* method) ;
+// System.String[] UnityEngine.Input::GetJoystickNames()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Input_GetJoystickNames_m506FC5C5D06CE7A15EBB9ACEC9DCF546E2DDCC0B (const RuntimeMethod* method) ;
+// System.Single UnityEngine.Input::GetAxis(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62 (String_t* ___axisName0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Input::GetButton(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetButton_m2F217DAE69DB3D1324FB848B3C9C84F19A80989E (String_t* ___buttonName0, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Joystick UnityEngine.InputSystem.Joystick::get_current()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Joystick_t2235B6B58C2C6BC3755C8E5852BC6BA9CFD0981C* Joystick_get_current_mF486977FC4B5A1E986B472889AD604AC6BE08BEC_inline (const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.StickControl UnityEngine.InputSystem.Joystick::get_stick()
@@ -13675,7 +13727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_ProcessMouse_mD684700E9D
 		L_0 = Mouse_get_current_m410C1F9ABC5AA77353574E8815F7E63289707986_inline(NULL);
 		if (!L_0)
 		{
-			goto IL_00a2;
+			goto IL_00a3;
 		}
 	}
 	{
@@ -13739,9 +13791,53 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_ProcessMouse_mD684700E9D
 		// ProcessMouse(ref m_Mouse);
 		MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* L_22 = (&__this->___m_Mouse_49);
 		UIInputModule_ProcessMouse_mF90F8EA789274FCD298E5ED801EE9675A9E3EEA4(__this, L_22, NULL);
+		return;
 	}
 
-IL_00a2:
+IL_00a3:
+	{
+		// else if (Input.mousePresent)
+		bool L_23;
+		L_23 = Input_get_mousePresent_mAD77FFD987CD5B998AFAD4DAECADBC76034026BF(NULL);
+		if (!L_23)
+		{
+			goto IL_010e;
+		}
+	}
+	{
+		// m_Mouse.position = Input.mousePosition;
+		MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* L_24 = (&__this->___m_Mouse_49);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_26;
+		L_26 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_25, NULL);
+		MouseModel_set_position_mF52DACDB97F269AEC85646486093D6A135C5E509(L_24, L_26, NULL);
+		// m_Mouse.scrollDelta = Input.mouseScrollDelta;
+		MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* L_27 = (&__this->___m_Mouse_49);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_28;
+		L_28 = Input_get_mouseScrollDelta_mD112408E9182AA0F529179FF31E21D8DCD5CFA74(NULL);
+		MouseModel_set_scrollDelta_m107437C513BD8F66EFDE6160EF224FEC6DA1F7A9(L_27, L_28, NULL);
+		// m_Mouse.leftButtonPressed = Input.GetMouseButton(0);
+		MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* L_29 = (&__this->___m_Mouse_49);
+		bool L_30;
+		L_30 = Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA(0, NULL);
+		MouseModel_set_leftButtonPressed_mF1308166818C7AE8C3083EAE08FF32B24C8DDBF1(L_29, L_30, NULL);
+		// m_Mouse.rightButtonPressed = Input.GetMouseButton(1);
+		MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* L_31 = (&__this->___m_Mouse_49);
+		bool L_32;
+		L_32 = Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA(1, NULL);
+		MouseModel_set_rightButtonPressed_m87EF490742E8A801BBAB04A32A4B868C7E6031AE(L_31, L_32, NULL);
+		// m_Mouse.middleButtonPressed = Input.GetMouseButton(2);
+		MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* L_33 = (&__this->___m_Mouse_49);
+		bool L_34;
+		L_34 = Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA(2, NULL);
+		MouseModel_set_middleButtonPressed_mF1E5EA114314006CDD15F484FCE7450F3D3B0A39(L_33, L_34, NULL);
+		// ProcessMouse(ref m_Mouse);
+		MouseModel_t2F69F33E707572E3123D32A97E370F329CE4DC37* L_35 = (&__this->___m_Mouse_49);
+		UIInputModule_ProcessMouse_mF90F8EA789274FCD298E5ED801EE9675A9E3EEA4(__this, L_35, NULL);
+	}
+
+IL_010e:
 	{
 		// }
 		return;
@@ -14099,7 +14195,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_ProcessGamepad_m0D8E15D9
 		L_0 = Gamepad_get_current_mAC9BE72710676EA54E760FFBA15404A81D7DEEB6_inline(NULL);
 		if (!L_0)
 		{
-			goto IL_007b;
+			goto IL_007c;
 		}
 	}
 	{
@@ -14150,9 +14246,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_ProcessGamepad_m0D8E15D9
 		// ProcessGamepad(ref m_Gamepad);
 		GamepadModel_t90941A6415CB6C355A83B1AB7E939D06814A1EE3* L_17 = (&__this->___m_Gamepad_50);
 		UIInputModule_ProcessGamepad_m4CAB4ED476E35FF67CF895157F3DDA8DDC456AB9(__this, L_17, NULL);
+		return;
 	}
 
-IL_007b:
+IL_007c:
+	{
+		// else if (Input.GetJoystickNames().Length > 0)
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18;
+		L_18 = Input_GetJoystickNames_m506FC5C5D06CE7A15EBB9ACEC9DCF546E2DDCC0B(NULL);
+		NullCheck(L_18);
+		if (!(((RuntimeArray*)L_18)->max_length))
+		{
+			goto IL_00e2;
+		}
+	}
+	{
+		// m_Gamepad.leftStick = new Vector2(Input.GetAxis(m_HorizontalAxis), Input.GetAxis(m_VerticalAxis));
+		GamepadModel_t90941A6415CB6C355A83B1AB7E939D06814A1EE3* L_19 = (&__this->___m_Gamepad_50);
+		String_t* L_20 = __this->___m_HorizontalAxis_44;
+		float L_21;
+		L_21 = Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62(L_20, NULL);
+		String_t* L_22 = __this->___m_VerticalAxis_45;
+		float L_23;
+		L_23 = Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62(L_22, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_24;
+		memset((&L_24), 0, sizeof(L_24));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_24), L_21, L_23, /*hidden argument*/NULL);
+		GamepadModel_set_leftStick_m8579917EDFBF3F998A18240C454FED95E50E1587_inline(L_19, L_24, NULL);
+		// m_Gamepad.submitButtonDown = Input.GetButton(m_SubmitButton);
+		GamepadModel_t90941A6415CB6C355A83B1AB7E939D06814A1EE3* L_25 = (&__this->___m_Gamepad_50);
+		String_t* L_26 = __this->___m_SubmitButton_46;
+		bool L_27;
+		L_27 = Input_GetButton_m2F217DAE69DB3D1324FB848B3C9C84F19A80989E(L_26, NULL);
+		GamepadModel_set_submitButtonDown_m23F72A7B2DF8A8808F6889A1E98BD8931ED3458B(L_25, L_27, NULL);
+		// m_Gamepad.cancelButtonDown = Input.GetButton(m_CancelButton);
+		GamepadModel_t90941A6415CB6C355A83B1AB7E939D06814A1EE3* L_28 = (&__this->___m_Gamepad_50);
+		String_t* L_29 = __this->___m_CancelButton_47;
+		bool L_30;
+		L_30 = Input_GetButton_m2F217DAE69DB3D1324FB848B3C9C84F19A80989E(L_29, NULL);
+		GamepadModel_set_cancelButtonDown_mF13195D2D11D9371BDC1310B58075B7D93626F84(L_28, L_30, NULL);
+		// ProcessGamepad(ref m_Gamepad);
+		GamepadModel_t90941A6415CB6C355A83B1AB7E939D06814A1EE3* L_31 = (&__this->___m_Gamepad_50);
+		UIInputModule_ProcessGamepad_m4CAB4ED476E35FF67CF895157F3DDA8DDC456AB9(__this, L_31, NULL);
+	}
+
+IL_00e2:
 	{
 		// }
 		return;
@@ -14178,7 +14316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_ProcessJoystick_m8B718A2
 		L_0 = Joystick_get_current_mF486977FC4B5A1E986B472889AD604AC6BE08BEC_inline(NULL);
 		if (!L_0)
 		{
-			goto IL_0080;
+			goto IL_0081;
 		}
 	}
 	{
@@ -14249,9 +14387,58 @@ IL_0049:
 		// ProcessJoystick(ref m_Joystick);
 		JoystickModel_t8ADCDAC5A54934FBAD527CAABA8E2DBB7CE87017* L_17 = (&__this->___m_Joystick_51);
 		UIInputModule_ProcessJoystick_m0AC925B34544FA77F96A55E284B516410D30D8FF(__this, L_17, NULL);
+		return;
 	}
 
-IL_0080:
+IL_0081:
+	{
+		// else if (!m_EnableGamepadInput && Input.GetJoystickNames().Length > 0)
+		bool L_18 = __this->___m_EnableGamepadInput_42;
+		if (L_18)
+		{
+			goto IL_00ef;
+		}
+	}
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_19;
+		L_19 = Input_GetJoystickNames_m506FC5C5D06CE7A15EBB9ACEC9DCF546E2DDCC0B(NULL);
+		NullCheck(L_19);
+		if (!(((RuntimeArray*)L_19)->max_length))
+		{
+			goto IL_00ef;
+		}
+	}
+	{
+		// m_Joystick.move = new Vector2(Input.GetAxis(m_HorizontalAxis), Input.GetAxis(m_VerticalAxis));
+		JoystickModel_t8ADCDAC5A54934FBAD527CAABA8E2DBB7CE87017* L_20 = (&__this->___m_Joystick_51);
+		String_t* L_21 = __this->___m_HorizontalAxis_44;
+		float L_22;
+		L_22 = Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62(L_21, NULL);
+		String_t* L_23 = __this->___m_VerticalAxis_45;
+		float L_24;
+		L_24 = Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62(L_23, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_25;
+		memset((&L_25), 0, sizeof(L_25));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_25), L_22, L_24, /*hidden argument*/NULL);
+		JoystickModel_set_move_m84DB43EE4C57318CE0B7FFC8416A6E9DC7DEDEFD_inline(L_20, L_25, NULL);
+		// m_Joystick.submitButtonDown = Input.GetButton(m_SubmitButton);
+		JoystickModel_t8ADCDAC5A54934FBAD527CAABA8E2DBB7CE87017* L_26 = (&__this->___m_Joystick_51);
+		String_t* L_27 = __this->___m_SubmitButton_46;
+		bool L_28;
+		L_28 = Input_GetButton_m2F217DAE69DB3D1324FB848B3C9C84F19A80989E(L_27, NULL);
+		JoystickModel_set_submitButtonDown_m972C04699F6CF1AE3EF76B94B9F303D508345596(L_26, L_28, NULL);
+		// m_Joystick.cancelButtonDown = Input.GetButton(m_CancelButton);
+		JoystickModel_t8ADCDAC5A54934FBAD527CAABA8E2DBB7CE87017* L_29 = (&__this->___m_Joystick_51);
+		String_t* L_30 = __this->___m_CancelButton_47;
+		bool L_31;
+		L_31 = Input_GetButton_m2F217DAE69DB3D1324FB848B3C9C84F19A80989E(L_30, NULL);
+		JoystickModel_set_cancelButtonDown_mF5A043FAAB87DC5964D93A18CF3D643600009BEA(L_29, L_31, NULL);
+		// ProcessJoystick(ref m_Joystick);
+		JoystickModel_t8ADCDAC5A54934FBAD527CAABA8E2DBB7CE87017* L_32 = (&__this->___m_Joystick_51);
+		UIInputModule_ProcessJoystick_m0AC925B34544FA77F96A55E284B516410D30D8FF(__this, L_32, NULL);
+	}
+
+IL_00ef:
 	{
 		// }
 		return;
