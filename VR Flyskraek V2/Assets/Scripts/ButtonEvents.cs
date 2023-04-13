@@ -6,7 +6,9 @@ using UnityEngine.Audio;
 public class ButtonEvents : MonoBehaviour
 {
     public GameObject image;
-    public AudioSource sound;
+    public GameObject BadWeather;
+    public Material BadSky;
+    public Material GoodSky;
 
     void Start()
     {
@@ -30,8 +32,15 @@ public class ButtonEvents : MonoBehaviour
 
 
 
-    public void PlaySound()
+    public void StartBadWeather()
     {
-        sound.Play();
+        BadWeather.SetActive(true);
+        RenderSettings.skybox = BadSky;
+    }
+
+    public void StopBadWeather()
+    {
+        BadWeather.SetActive(false);
+        RenderSettings.skybox = GoodSky;
     }
 }
