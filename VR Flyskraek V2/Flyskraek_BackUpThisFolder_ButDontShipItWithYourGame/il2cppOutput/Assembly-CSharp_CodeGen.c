@@ -92,123 +92,155 @@ extern void HMDInfoManger_Start_m2365C7483A93F02C62EFBF03A4A2F4EB9477C4DE (void)
 extern void HMDInfoManger_Update_mA2DAF0F4FA60D00BAF60E58795D695B2A66D8B9F (void);
 // 0x00000028 System.Void HMDInfoManger::.ctor()
 extern void HMDInfoManger__ctor_m0A47794B39E8B67669CDB6605566EB64BA712B93 (void);
-// 0x00000029 System.Void Intro::Start()
+// 0x00000029 System.Void Fade::Start()
+extern void Fade_Start_m8CBCBF378DDED06FC5C8997B695D1C97D9A3F7FD (void);
+// 0x0000002A System.Void Fade::Update()
+extern void Fade_Update_m8008A94A56BD02EE725B3D28DCA21BF6BF5DC17E (void);
+// 0x0000002B System.Collections.IEnumerator Fade::FadeIn()
+extern void Fade_FadeIn_m6766298FE702914406B1AA49DB3FDC9B49550833 (void);
+// 0x0000002C System.Void Fade::.ctor()
+extern void Fade__ctor_m3B25DDD079B7BA6C55A8EF77DCC22CF01807150F (void);
+// 0x0000002D System.Void Fade/<FadeIn>d__2::.ctor(System.Int32)
+extern void U3CFadeInU3Ed__2__ctor_m906DCBA7EA57BF7309823E6363B69AF9491096E4 (void);
+// 0x0000002E System.Void Fade/<FadeIn>d__2::System.IDisposable.Dispose()
+extern void U3CFadeInU3Ed__2_System_IDisposable_Dispose_m14CBCF6DCA75B1B0A529CE8EB7E3A1BF84C7079E (void);
+// 0x0000002F System.Boolean Fade/<FadeIn>d__2::MoveNext()
+extern void U3CFadeInU3Ed__2_MoveNext_mB0FCE80AE94964593DCB329CBEA39A4612F887BE (void);
+// 0x00000030 System.Object Fade/<FadeIn>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CFadeInU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB37BF7EFF0C7852DF3B9EFB5031BD303A9105882 (void);
+// 0x00000031 System.Void Fade/<FadeIn>d__2::System.Collections.IEnumerator.Reset()
+extern void U3CFadeInU3Ed__2_System_Collections_IEnumerator_Reset_mBD2A9F6BE111BB7C7AF6C7FCD60B831F2D0F0549 (void);
+// 0x00000032 System.Object Fade/<FadeIn>d__2::System.Collections.IEnumerator.get_Current()
+extern void U3CFadeInU3Ed__2_System_Collections_IEnumerator_get_Current_m6CF101CFF4D18CFFDB24E9995F84BF16B81AFEFF (void);
+// 0x00000033 System.Void Intro::Start()
 extern void Intro_Start_mED069CCBF90D9C9297AB1A2950428FA6B84A8A64 (void);
-// 0x0000002A System.Void Intro::Update()
+// 0x00000034 System.Void Intro::Update()
 extern void Intro_Update_m05AD393689ADBC5D1EEE010ECC64CFB1AEF36C00 (void);
-// 0x0000002B System.Void Intro::NextScene()
-extern void Intro_NextScene_m06CBBE96C9D8B3EE3D26CA242C765E9A83CB3E73 (void);
-// 0x0000002C System.Void Intro::.ctor()
+// 0x00000035 System.Collections.IEnumerator Intro::NextScene()
+extern void Intro_NextScene_m3A7164A5794C59A0F363C2339998932CC11B6372 (void);
+// 0x00000036 System.Void Intro::.ctor()
 extern void Intro__ctor_m7D4DB3A66688C059CF001AE68699BE1E51CAE3DE (void);
-// 0x0000002D System.Void LightToggle::ToggleLight()
+// 0x00000037 System.Void Intro/<NextScene>d__4::.ctor(System.Int32)
+extern void U3CNextSceneU3Ed__4__ctor_m5AC9D4A78933361A85C5DA5E7E2ED8FB486A280F (void);
+// 0x00000038 System.Void Intro/<NextScene>d__4::System.IDisposable.Dispose()
+extern void U3CNextSceneU3Ed__4_System_IDisposable_Dispose_mD48A1F8F66E3348C21D3D6D69F0C532F372CFD3C (void);
+// 0x00000039 System.Boolean Intro/<NextScene>d__4::MoveNext()
+extern void U3CNextSceneU3Ed__4_MoveNext_mD95A4B8EF751AE5B5BC7CB8533A7D2CD1FE59446 (void);
+// 0x0000003A System.Object Intro/<NextScene>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CNextSceneU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2A8065A755720FE02F59E9A3447D2D15F1C9BD8D (void);
+// 0x0000003B System.Void Intro/<NextScene>d__4::System.Collections.IEnumerator.Reset()
+extern void U3CNextSceneU3Ed__4_System_Collections_IEnumerator_Reset_m65CAE21537FC6F69023BE29746E9011C1C78B498 (void);
+// 0x0000003C System.Object Intro/<NextScene>d__4::System.Collections.IEnumerator.get_Current()
+extern void U3CNextSceneU3Ed__4_System_Collections_IEnumerator_get_Current_mB6AD0E4ADCF79B3E3B04EDC2E855E549145519DF (void);
+// 0x0000003D System.Void LightToggle::ToggleLight()
 extern void LightToggle_ToggleLight_mF4BD1547BB8E75C56A384185929D6570F67B5EF4 (void);
-// 0x0000002E System.Void LightToggle::.ctor()
+// 0x0000003E System.Void LightToggle::.ctor()
 extern void LightToggle__ctor_m3962F236C8AAC9650ABC953B44751475AE22924C (void);
-// 0x0000002F System.Void MaskSpringVisualiser::Update()
+// 0x0000003F System.Void MaskSpringVisualiser::Update()
 extern void MaskSpringVisualiser_Update_m6F206C27472015BFE8F68681371EBF368CC8F8AE (void);
-// 0x00000030 System.Void MaskSpringVisualiser::.ctor()
+// 0x00000040 System.Void MaskSpringVisualiser::.ctor()
 extern void MaskSpringVisualiser__ctor_mB3A998A3CBEEA95D9C79EB640BBD73DC56B769B1 (void);
-// 0x00000031 System.Void PhysicsButton::Start()
+// 0x00000041 System.Void PhysicsButton::Start()
 extern void PhysicsButton_Start_mD7FF728688E94350441F3C4DF550E1B3B75FBC7F (void);
-// 0x00000032 System.Void PhysicsButton::Update()
+// 0x00000042 System.Void PhysicsButton::Update()
 extern void PhysicsButton_Update_m6E8CFA7843AA63E629BACBBC6E37D9E6D5A47DAD (void);
-// 0x00000033 System.Single PhysicsButton::GetValue()
+// 0x00000043 System.Single PhysicsButton::GetValue()
 extern void PhysicsButton_GetValue_mBFDF14F600CC337F3225B111B54B68FC25CBDA00 (void);
-// 0x00000034 System.Void PhysicsButton::Pressed()
+// 0x00000044 System.Void PhysicsButton::Pressed()
 extern void PhysicsButton_Pressed_mAE854AE66F324963289A4E0FB2B6FCDB3714E576 (void);
-// 0x00000035 System.Void PhysicsButton::Released()
+// 0x00000045 System.Void PhysicsButton::Released()
 extern void PhysicsButton_Released_m18E01692513EDA624AB91A2BCB0BC0C80A7DAA9C (void);
-// 0x00000036 System.Void PhysicsButton::.ctor()
+// 0x00000046 System.Void PhysicsButton::.ctor()
 extern void PhysicsButton__ctor_m0AF74E2760D4D820B3D6AC03D96C384EC90FEBBC (void);
-// 0x00000037 System.Void PlayerController::Awake()
+// 0x00000047 System.Void PlayerController::Awake()
 extern void PlayerController_Awake_m82639826DE098DC447C79B43900C5F2A630B3DC3 (void);
-// 0x00000038 System.Void PlayerController::OnDestroy()
+// 0x00000048 System.Void PlayerController::OnDestroy()
 extern void PlayerController_OnDestroy_mBACF79169C488FF036B4FFA236852D6605281EFF (void);
-// 0x00000039 System.Void PlayerController::Start()
+// 0x00000049 System.Void PlayerController::Start()
 extern void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (void);
-// 0x0000003A System.Void PlayerController::resetPosition()
+// 0x0000004A System.Void PlayerController::resetPosition()
 extern void PlayerController_resetPosition_mD02735A2318EA4963D63AD8FC107FB8D5FBDD13B (void);
-// 0x0000003B System.Void PlayerController::resetPosition(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000004B System.Void PlayerController::resetPosition(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void PlayerController_resetPosition_mAF5DCFB3DD220CC83DFC416C0213E3F699330655 (void);
-// 0x0000003C System.Void PlayerController::.ctor()
+// 0x0000004C System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x0000003D System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x0000004D System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x0000003E System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x0000004E System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-// 0x0000003F System.Void DigitalRuby.RainMaker.BaseRainScript::UpdateWind()
+// 0x0000004F System.Void DigitalRuby.RainMaker.BaseRainScript::UpdateWind()
 extern void BaseRainScript_UpdateWind_mA41659544ECB63201BBB6A3FDD491C1DD8EDCB78 (void);
-// 0x00000040 System.Void DigitalRuby.RainMaker.BaseRainScript::CheckForRainChange()
+// 0x00000050 System.Void DigitalRuby.RainMaker.BaseRainScript::CheckForRainChange()
 extern void BaseRainScript_CheckForRainChange_mE5317F1FC80D6C43599DA16FE497250FA2A04B5B (void);
-// 0x00000041 System.Void DigitalRuby.RainMaker.BaseRainScript::Start()
+// 0x00000051 System.Void DigitalRuby.RainMaker.BaseRainScript::Start()
 extern void BaseRainScript_Start_m8687C15AE3D4E4C290BE64B94686C9E10AE83919 (void);
-// 0x00000042 System.Void DigitalRuby.RainMaker.BaseRainScript::Update()
+// 0x00000052 System.Void DigitalRuby.RainMaker.BaseRainScript::Update()
 extern void BaseRainScript_Update_mE588EF06A0EF3D575F40AB2BB402CE385C58AF63 (void);
-// 0x00000043 System.Single DigitalRuby.RainMaker.BaseRainScript::RainFallEmissionRate()
+// 0x00000053 System.Single DigitalRuby.RainMaker.BaseRainScript::RainFallEmissionRate()
 extern void BaseRainScript_RainFallEmissionRate_m6425004A3236A7BA58CAE25AD592A7D97C7948B2 (void);
-// 0x00000044 System.Single DigitalRuby.RainMaker.BaseRainScript::MistEmissionRate()
+// 0x00000054 System.Single DigitalRuby.RainMaker.BaseRainScript::MistEmissionRate()
 extern void BaseRainScript_MistEmissionRate_mF8FA9D9880ED829F5D7C61291AE929954A3AD311 (void);
-// 0x00000045 System.Boolean DigitalRuby.RainMaker.BaseRainScript::get_UseRainMistSoftParticles()
+// 0x00000055 System.Boolean DigitalRuby.RainMaker.BaseRainScript::get_UseRainMistSoftParticles()
 extern void BaseRainScript_get_UseRainMistSoftParticles_mC2CF7D770D915A63B20D69265EC27FA1E3F34E53 (void);
-// 0x00000046 System.Void DigitalRuby.RainMaker.BaseRainScript::.ctor()
+// 0x00000056 System.Void DigitalRuby.RainMaker.BaseRainScript::.ctor()
 extern void BaseRainScript__ctor_mDF34113D5FA6D3A9AF70649B226BC51B6FEFD422 (void);
-// 0x00000047 UnityEngine.AudioSource DigitalRuby.RainMaker.LoopingAudioSource::get_AudioSource()
+// 0x00000057 UnityEngine.AudioSource DigitalRuby.RainMaker.LoopingAudioSource::get_AudioSource()
 extern void LoopingAudioSource_get_AudioSource_m7065C418300FE55E18B4CC7F94DD0B104B10049E (void);
-// 0x00000048 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_AudioSource(UnityEngine.AudioSource)
+// 0x00000058 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_AudioSource(UnityEngine.AudioSource)
 extern void LoopingAudioSource_set_AudioSource_m78D358958BE0CC9674B7371D1DAC93531135D3E2 (void);
-// 0x00000049 System.Single DigitalRuby.RainMaker.LoopingAudioSource::get_TargetVolume()
+// 0x00000059 System.Single DigitalRuby.RainMaker.LoopingAudioSource::get_TargetVolume()
 extern void LoopingAudioSource_get_TargetVolume_mC8FAD031000782FBF9DB6683ED8A63A503CED47F (void);
-// 0x0000004A System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_TargetVolume(System.Single)
+// 0x0000005A System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_TargetVolume(System.Single)
 extern void LoopingAudioSource_set_TargetVolume_mB7E2108798FEBFD47D49006B9A6AD0273EDE0CBF (void);
-// 0x0000004B System.Void DigitalRuby.RainMaker.LoopingAudioSource::.ctor(UnityEngine.MonoBehaviour,UnityEngine.AudioClip,UnityEngine.Audio.AudioMixerGroup)
+// 0x0000005B System.Void DigitalRuby.RainMaker.LoopingAudioSource::.ctor(UnityEngine.MonoBehaviour,UnityEngine.AudioClip,UnityEngine.Audio.AudioMixerGroup)
 extern void LoopingAudioSource__ctor_m70739E5DB898B4D0456BB12A2A727D6A662B6FA3 (void);
-// 0x0000004C System.Void DigitalRuby.RainMaker.LoopingAudioSource::Play(System.Single)
+// 0x0000005C System.Void DigitalRuby.RainMaker.LoopingAudioSource::Play(System.Single)
 extern void LoopingAudioSource_Play_m2665DF0EAFCBF66BCFB90A1998BADAD038E58E45 (void);
-// 0x0000004D System.Void DigitalRuby.RainMaker.LoopingAudioSource::Stop()
+// 0x0000005D System.Void DigitalRuby.RainMaker.LoopingAudioSource::Stop()
 extern void LoopingAudioSource_Stop_m02E32099CFA66944960F5F5CB15261D64C481444 (void);
-// 0x0000004E System.Void DigitalRuby.RainMaker.LoopingAudioSource::Update()
+// 0x0000005E System.Void DigitalRuby.RainMaker.LoopingAudioSource::Update()
 extern void LoopingAudioSource_Update_m3B7209F06B2B228C94FDDBC6522E59281DC5EA02 (void);
-// 0x0000004F System.Void DigitalRuby.RainMaker.RainCollision::Start()
+// 0x0000005F System.Void DigitalRuby.RainMaker.RainCollision::Start()
 extern void RainCollision_Start_m0ED3FA833DD2C7AE60F96A84C9CDAC788AC2EB9E (void);
-// 0x00000050 System.Void DigitalRuby.RainMaker.RainCollision::Update()
+// 0x00000060 System.Void DigitalRuby.RainMaker.RainCollision::Update()
 extern void RainCollision_Update_mFB16DE326A7EEEEF3DE3DEC68D6DF488EA0686C5 (void);
-// 0x00000051 System.Void DigitalRuby.RainMaker.RainCollision::Emit(UnityEngine.ParticleSystem,UnityEngine.Vector3&)
+// 0x00000061 System.Void DigitalRuby.RainMaker.RainCollision::Emit(UnityEngine.ParticleSystem,UnityEngine.Vector3&)
 extern void RainCollision_Emit_m77930BD1CBDC56303E220E4B7F72AE082729E55D (void);
-// 0x00000052 System.Void DigitalRuby.RainMaker.RainCollision::OnParticleCollision(UnityEngine.GameObject)
+// 0x00000062 System.Void DigitalRuby.RainMaker.RainCollision::OnParticleCollision(UnityEngine.GameObject)
 extern void RainCollision_OnParticleCollision_m6BBBEE55CAD303E7FC6A08511832C5F650BA00EA (void);
-// 0x00000053 System.Void DigitalRuby.RainMaker.RainCollision::.ctor()
+// 0x00000063 System.Void DigitalRuby.RainMaker.RainCollision::.ctor()
 extern void RainCollision__ctor_m5C8560B6BAF26D67CE366929B2189B53DCF19979 (void);
-// 0x00000054 System.Void DigitalRuby.RainMaker.RainCollision::.cctor()
+// 0x00000064 System.Void DigitalRuby.RainMaker.RainCollision::.cctor()
 extern void RainCollision__cctor_m55AC4F38C37E71FC0BB19C7F60472A5E6FB323AE (void);
-// 0x00000055 System.Void DigitalRuby.RainMaker.RainScript::UpdateRain()
+// 0x00000065 System.Void DigitalRuby.RainMaker.RainScript::UpdateRain()
 extern void RainScript_UpdateRain_mC8F27ED19ABEBC9F75B7E269D3824A76D43029E2 (void);
-// 0x00000056 System.Void DigitalRuby.RainMaker.RainScript::Start()
+// 0x00000066 System.Void DigitalRuby.RainMaker.RainScript::Start()
 extern void RainScript_Start_m0CA9E19727CEB42CBC22F00292BE841FE4FF8C5C (void);
-// 0x00000057 System.Void DigitalRuby.RainMaker.RainScript::Update()
+// 0x00000067 System.Void DigitalRuby.RainMaker.RainScript::Update()
 extern void RainScript_Update_m83DF982F04CDCEF51F07D745E03473E438FFBF45 (void);
-// 0x00000058 System.Void DigitalRuby.RainMaker.RainScript::.ctor()
+// 0x00000068 System.Void DigitalRuby.RainMaker.RainScript::.ctor()
 extern void RainScript__ctor_m904ED00F45D16299FFAC4A0259CF01F6DF3934D1 (void);
-// 0x00000059 System.Void DigitalRuby.RainMaker.RainScript2D::EmitExplosion(UnityEngine.Vector3&)
+// 0x00000069 System.Void DigitalRuby.RainMaker.RainScript2D::EmitExplosion(UnityEngine.Vector3&)
 extern void RainScript2D_EmitExplosion_mF622AE9E524EB074CA3E81E8CA28AC066A41F106 (void);
-// 0x0000005A System.Void DigitalRuby.RainMaker.RainScript2D::TransformParticleSystem(UnityEngine.ParticleSystem,UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x0000006A System.Void DigitalRuby.RainMaker.RainScript2D::TransformParticleSystem(UnityEngine.ParticleSystem,UnityEngine.Vector2,UnityEngine.Vector2)
 extern void RainScript2D_TransformParticleSystem_mCA622E7F4A450D1C75D1B052401E3D749B00AC11 (void);
-// 0x0000005B System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsRainParticles()
+// 0x0000006B System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsRainParticles()
 extern void RainScript2D_CheckForCollisionsRainParticles_m539998E873D8F1D2E3ED2FB6F15DACFC6D397104 (void);
-// 0x0000005C System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsMistParticles()
+// 0x0000006C System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsMistParticles()
 extern void RainScript2D_CheckForCollisionsMistParticles_m4D5BD3DB838149AF935BB7C7789076D5561B6CB2 (void);
-// 0x0000005D System.Void DigitalRuby.RainMaker.RainScript2D::Start()
+// 0x0000006D System.Void DigitalRuby.RainMaker.RainScript2D::Start()
 extern void RainScript2D_Start_mAC6B71E67E342520A17C733859F4CF03783A8953 (void);
-// 0x0000005E System.Void DigitalRuby.RainMaker.RainScript2D::Update()
+// 0x0000006E System.Void DigitalRuby.RainMaker.RainScript2D::Update()
 extern void RainScript2D_Update_mFBA340A29A023F1F547E771CC085F3FBF40503E9 (void);
-// 0x0000005F System.Single DigitalRuby.RainMaker.RainScript2D::RainFallEmissionRate()
+// 0x0000006F System.Single DigitalRuby.RainMaker.RainScript2D::RainFallEmissionRate()
 extern void RainScript2D_RainFallEmissionRate_m62AE412DFEA8BB0BFC08D27ACA83761F4DFB74E0 (void);
-// 0x00000060 System.Boolean DigitalRuby.RainMaker.RainScript2D::get_UseRainMistSoftParticles()
+// 0x00000070 System.Boolean DigitalRuby.RainMaker.RainScript2D::get_UseRainMistSoftParticles()
 extern void RainScript2D_get_UseRainMistSoftParticles_mB3B399F4961D21506DEF9A09833B2DA3CC941924 (void);
-// 0x00000061 System.Void DigitalRuby.RainMaker.RainScript2D::.ctor()
+// 0x00000071 System.Void DigitalRuby.RainMaker.RainScript2D::.ctor()
 extern void RainScript2D__ctor_m27142636A537D5322DD2773E52474BF24E169D81 (void);
-// 0x00000062 System.Void DigitalRuby.RainMaker.RainScript2D::.cctor()
+// 0x00000072 System.Void DigitalRuby.RainMaker.RainScript2D::.cctor()
 extern void RainScript2D__cctor_m266418890BBE84173070244DBF98212F6DD97BAF (void);
-static Il2CppMethodPointer s_methodPointers[98] = 
+static Il2CppMethodPointer s_methodPointers[114] = 
 {
 	Hand_Start_mF97170CC92093DE16E9DD633908D8FF76D6386DB,
 	Hand_FixedUpdate_mDE5734168E9833CD0FE927CEFEE557EB31BDC133,
@@ -250,10 +282,26 @@ static Il2CppMethodPointer s_methodPointers[98] =
 	HMDInfoManger_Start_m2365C7483A93F02C62EFBF03A4A2F4EB9477C4DE,
 	HMDInfoManger_Update_mA2DAF0F4FA60D00BAF60E58795D695B2A66D8B9F,
 	HMDInfoManger__ctor_m0A47794B39E8B67669CDB6605566EB64BA712B93,
+	Fade_Start_m8CBCBF378DDED06FC5C8997B695D1C97D9A3F7FD,
+	Fade_Update_m8008A94A56BD02EE725B3D28DCA21BF6BF5DC17E,
+	Fade_FadeIn_m6766298FE702914406B1AA49DB3FDC9B49550833,
+	Fade__ctor_m3B25DDD079B7BA6C55A8EF77DCC22CF01807150F,
+	U3CFadeInU3Ed__2__ctor_m906DCBA7EA57BF7309823E6363B69AF9491096E4,
+	U3CFadeInU3Ed__2_System_IDisposable_Dispose_m14CBCF6DCA75B1B0A529CE8EB7E3A1BF84C7079E,
+	U3CFadeInU3Ed__2_MoveNext_mB0FCE80AE94964593DCB329CBEA39A4612F887BE,
+	U3CFadeInU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB37BF7EFF0C7852DF3B9EFB5031BD303A9105882,
+	U3CFadeInU3Ed__2_System_Collections_IEnumerator_Reset_mBD2A9F6BE111BB7C7AF6C7FCD60B831F2D0F0549,
+	U3CFadeInU3Ed__2_System_Collections_IEnumerator_get_Current_m6CF101CFF4D18CFFDB24E9995F84BF16B81AFEFF,
 	Intro_Start_mED069CCBF90D9C9297AB1A2950428FA6B84A8A64,
 	Intro_Update_m05AD393689ADBC5D1EEE010ECC64CFB1AEF36C00,
-	Intro_NextScene_m06CBBE96C9D8B3EE3D26CA242C765E9A83CB3E73,
+	Intro_NextScene_m3A7164A5794C59A0F363C2339998932CC11B6372,
 	Intro__ctor_m7D4DB3A66688C059CF001AE68699BE1E51CAE3DE,
+	U3CNextSceneU3Ed__4__ctor_m5AC9D4A78933361A85C5DA5E7E2ED8FB486A280F,
+	U3CNextSceneU3Ed__4_System_IDisposable_Dispose_mD48A1F8F66E3348C21D3D6D69F0C532F372CFD3C,
+	U3CNextSceneU3Ed__4_MoveNext_mD95A4B8EF751AE5B5BC7CB8533A7D2CD1FE59446,
+	U3CNextSceneU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2A8065A755720FE02F59E9A3447D2D15F1C9BD8D,
+	U3CNextSceneU3Ed__4_System_Collections_IEnumerator_Reset_m65CAE21537FC6F69023BE29746E9011C1C78B498,
+	U3CNextSceneU3Ed__4_System_Collections_IEnumerator_get_Current_mB6AD0E4ADCF79B3E3B04EDC2E855E549145519DF,
 	LightToggle_ToggleLight_mF4BD1547BB8E75C56A384185929D6570F67B5EF4,
 	LightToggle__ctor_m3962F236C8AAC9650ABC953B44751475AE22924C,
 	MaskSpringVisualiser_Update_m6F206C27472015BFE8F68681371EBF368CC8F8AE,
@@ -309,7 +357,7 @@ static Il2CppMethodPointer s_methodPointers[98] =
 	RainScript2D__ctor_m27142636A537D5322DD2773E52474BF24E169D81,
 	RainScript2D__cctor_m266418890BBE84173070244DBF98212F6DD97BAF,
 };
-static const int32_t s_InvokerIndices[98] = 
+static const int32_t s_InvokerIndices[114] = 
 {
 	4774,
 	4774,
@@ -353,8 +401,24 @@ static const int32_t s_InvokerIndices[98] =
 	4774,
 	4774,
 	4774,
+	4667,
+	4774,
+	3750,
+	4774,
+	4579,
+	4667,
+	4774,
+	4667,
 	4774,
 	4774,
+	4667,
+	4774,
+	3750,
+	4774,
+	4579,
+	4667,
+	4774,
+	4667,
 	4774,
 	4774,
 	4774,
@@ -414,7 +478,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	98,
+	114,
 	s_methodPointers,
 	0,
 	NULL,

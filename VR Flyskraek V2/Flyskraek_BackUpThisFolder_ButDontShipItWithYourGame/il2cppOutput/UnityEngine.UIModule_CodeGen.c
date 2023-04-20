@@ -215,13 +215,15 @@ extern void CanvasGroup_get_alpha_mBFEA193D2886B27CC53B31F90F7A1659B67ED6DF (voi
 extern void CanvasGroup_set_alpha_m5C06839316D948BB4F75ED72C87FA1F1A20C333F (void);
 // 0x00000066 System.Boolean UnityEngine.CanvasGroup::get_interactable()
 extern void CanvasGroup_get_interactable_mE5EE5E3AFEAD06D18E15A91C0A0E706D9FE40F76 (void);
-// 0x00000067 System.Boolean UnityEngine.CanvasGroup::get_blocksRaycasts()
+// 0x00000067 System.Void UnityEngine.CanvasGroup::set_interactable(System.Boolean)
+extern void CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757 (void);
+// 0x00000068 System.Boolean UnityEngine.CanvasGroup::get_blocksRaycasts()
 extern void CanvasGroup_get_blocksRaycasts_mFEC4D16E66CD2480692CC66CF79FCA06DBF0307C (void);
-// 0x00000068 System.Boolean UnityEngine.CanvasGroup::get_ignoreParentGroups()
+// 0x00000069 System.Boolean UnityEngine.CanvasGroup::get_ignoreParentGroups()
 extern void CanvasGroup_get_ignoreParentGroups_m2F38E053B86FD01735C2DA2047E197C0B8654361 (void);
-// 0x00000069 System.Boolean UnityEngine.CanvasGroup::IsRaycastLocationValid(UnityEngine.Vector2,UnityEngine.Camera)
+// 0x0000006A System.Boolean UnityEngine.CanvasGroup::IsRaycastLocationValid(UnityEngine.Vector2,UnityEngine.Camera)
 extern void CanvasGroup_IsRaycastLocationValid_m3B745747F3BF9BAC4EFB9F76F02DE3219D8D54D1 (void);
-static Il2CppMethodPointer s_methodPointers[105] = 
+static Il2CppMethodPointer s_methodPointers[106] = 
 {
 	RectTransformUtility_PixelAdjustPoint_mF772BC0CDB4D0B6BDB06DADEFB59B8CEEF920558,
 	RectTransformUtility_PixelAdjustRect_mCE31ACDDCB3E4DA1B3BC5A095C31B0A520A019E6,
@@ -325,11 +327,12 @@ static Il2CppMethodPointer s_methodPointers[105] =
 	CanvasGroup_get_alpha_mBFEA193D2886B27CC53B31F90F7A1659B67ED6DF,
 	CanvasGroup_set_alpha_m5C06839316D948BB4F75ED72C87FA1F1A20C333F,
 	CanvasGroup_get_interactable_mE5EE5E3AFEAD06D18E15A91C0A0E706D9FE40F76,
+	CanvasGroup_set_interactable_m86928BB0894EF3F06BC7BE63594272FBA0DAC757,
 	CanvasGroup_get_blocksRaycasts_mFEC4D16E66CD2480692CC66CF79FCA06DBF0307C,
 	CanvasGroup_get_ignoreParentGroups_m2F38E053B86FD01735C2DA2047E197C0B8654361,
 	CanvasGroup_IsRaycastLocationValid_m3B745747F3BF9BAC4EFB9F76F02DE3219D8D54D1,
 };
-static const int32_t s_InvokerIndices[105] = 
+static const int32_t s_InvokerIndices[106] = 
 {
 	5994,
 	6482,
@@ -433,6 +436,7 @@ static const int32_t s_InvokerIndices[105] =
 	4710,
 	3809,
 	4579,
+	3687,
 	4579,
 	4579,
 	1288,
@@ -441,7 +445,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule = 
 {
 	"UnityEngine.UIModule.dll",
-	105,
+	106,
 	s_methodPointers,
 	0,
 	NULL,
