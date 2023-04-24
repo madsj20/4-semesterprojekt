@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(Animator))]
 public class Hand : MonoBehaviour
-{
+{ 
     // ANIMATION
     public float animationSpeed;
     Animator animator;
