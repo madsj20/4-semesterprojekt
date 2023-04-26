@@ -218,83 +218,141 @@ extern void PlayerController_resetPosition_mD02735A2318EA4963D63AD8FC107FB8D5FBD
 extern void PlayerController_resetPosition_mAF5DCFB3DD220CC83DFC416C0213E3F699330655 (void);
 // 0x00000067 System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x00000068 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x00000068 System.Void ScreenShakeVR::Awake()
+extern void ScreenShakeVR_Awake_m82AF692A51E922A36C7603EAC778455A141BD2E1 (void);
+// 0x00000069 System.Void ScreenShakeVR::OnEnable()
+extern void ScreenShakeVR_OnEnable_mC696AF0F08D15C67A4A2A9D74CA53F1C3C93561E (void);
+// 0x0000006A System.Void ScreenShakeVR::Shake(System.Single,System.Single,System.Single)
+extern void ScreenShakeVR_Shake_m19546272453562863E4B190AF271F7379662D83C (void);
+// 0x0000006B System.Void ScreenShakeVR::TriggerShake(System.Single,System.Single,System.Single)
+extern void ScreenShakeVR_TriggerShake_mB7F19D7255FE81BC27F0E16C8A47E11D18BED99E (void);
+// 0x0000006C System.Void ScreenShakeVR::Update()
+extern void ScreenShakeVR_Update_m79D6882165B67C841494CCC5F2C96C0C499F627A (void);
+// 0x0000006D System.Void ScreenShakeVR::OnRenderImage(UnityEngine.RenderTexture,UnityEngine.RenderTexture)
+extern void ScreenShakeVR_OnRenderImage_mE54075EEE423F1C70DC9EFF3F9D191F2E9C7407F (void);
+// 0x0000006E System.Void ScreenShakeVR::.ctor()
+extern void ScreenShakeVR__ctor_m1419F560DBCDF64622E460315B766A4B4081384B (void);
+// 0x0000006F System.Boolean ScreenShakeVR/ShakeEvent::get_finished()
+extern void ShakeEvent_get_finished_m9E5541B407040575E7D31169E271DC44FD8FC675 (void);
+// 0x00000070 System.Single ScreenShakeVR/ShakeEvent::get_currentStrength()
+extern void ShakeEvent_get_currentStrength_m1425A519FF403CBE2B33A2789695866CF9FCEFBB (void);
+// 0x00000071 System.Void ScreenShakeVR/ShakeEvent::.ctor(System.Single,System.Single,System.Single)
+extern void ShakeEvent__ctor_m19C06898440982F51B02DB797B2CA1C631D85957 (void);
+// 0x00000072 System.Void ScreenShakeVR/ShakeEvent::Update(System.Single)
+extern void ShakeEvent_Update_m3193B2689E55ECFBC5EAA6763FCBB2700DF87033 (void);
+// 0x00000073 System.Void StormScene::Start()
+extern void StormScene_Start_m32B47AF90C65C649CCA53E4BB3FC488761404775 (void);
+// 0x00000074 System.Void StormScene::Update()
+extern void StormScene_Update_m5514C31722A0DF58FD778CB59EA6DDC2D3A86ADE (void);
+// 0x00000075 System.Collections.IEnumerator StormScene::passiveShake()
+extern void StormScene_passiveShake_mC83E50032E854FBA7463089BAB91AD9713995FFA (void);
+// 0x00000076 System.Collections.IEnumerator StormScene::Storm()
+extern void StormScene_Storm_m51EB4EB5994072E4FE5F2C9CC0A9174A76736EDD (void);
+// 0x00000077 System.Void StormScene::initiateStorm()
+extern void StormScene_initiateStorm_m0D1E24001E520D2A0E2A29CBE1F0B8423CC448BB (void);
+// 0x00000078 System.Void StormScene::.ctor()
+extern void StormScene__ctor_m95EC0B28FCF6D98D2DF5325BD822122C2E844A07 (void);
+// 0x00000079 System.Void StormScene/<passiveShake>d__6::.ctor(System.Int32)
+extern void U3CpassiveShakeU3Ed__6__ctor_mEA22A47719EE12CBE2F5E39E759EA87533A94C54 (void);
+// 0x0000007A System.Void StormScene/<passiveShake>d__6::System.IDisposable.Dispose()
+extern void U3CpassiveShakeU3Ed__6_System_IDisposable_Dispose_mA7FD32239E809EC6CD538C804B19D1770AD7F5AF (void);
+// 0x0000007B System.Boolean StormScene/<passiveShake>d__6::MoveNext()
+extern void U3CpassiveShakeU3Ed__6_MoveNext_m83FEB74C94FAB1D40A5068558A4924E13BE9F9AD (void);
+// 0x0000007C System.Object StormScene/<passiveShake>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CpassiveShakeU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0EE871D8ECA5AEAEA497FEF5BC0D72F63AC54154 (void);
+// 0x0000007D System.Void StormScene/<passiveShake>d__6::System.Collections.IEnumerator.Reset()
+extern void U3CpassiveShakeU3Ed__6_System_Collections_IEnumerator_Reset_m13B5059B57C18DB9A8127DAE134CEE4050990565 (void);
+// 0x0000007E System.Object StormScene/<passiveShake>d__6::System.Collections.IEnumerator.get_Current()
+extern void U3CpassiveShakeU3Ed__6_System_Collections_IEnumerator_get_Current_m78C26F8B018D6DE6D311EE72720DE95650C36C84 (void);
+// 0x0000007F System.Void StormScene/<Storm>d__7::.ctor(System.Int32)
+extern void U3CStormU3Ed__7__ctor_m36CD688ED10473B90FAD150AA6455A819B85B950 (void);
+// 0x00000080 System.Void StormScene/<Storm>d__7::System.IDisposable.Dispose()
+extern void U3CStormU3Ed__7_System_IDisposable_Dispose_mA39162464F2A23647AC138C1122E245D8523BA78 (void);
+// 0x00000081 System.Boolean StormScene/<Storm>d__7::MoveNext()
+extern void U3CStormU3Ed__7_MoveNext_m9CDC92119E78234416518B9D08044BCF30658EBD (void);
+// 0x00000082 System.Object StormScene/<Storm>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CStormU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7FC9A3983EEF707AA67108DDB93457CF2A8861F1 (void);
+// 0x00000083 System.Void StormScene/<Storm>d__7::System.Collections.IEnumerator.Reset()
+extern void U3CStormU3Ed__7_System_Collections_IEnumerator_Reset_mE527BF47F0B65B65AD9C95BDDD7DFF5336324FF0 (void);
+// 0x00000084 System.Object StormScene/<Storm>d__7::System.Collections.IEnumerator.get_Current()
+extern void U3CStormU3Ed__7_System_Collections_IEnumerator_get_Current_m64DE195E54CA195AC4BA513119447841E47FCA91 (void);
+// 0x00000085 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x00000069 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x00000086 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-// 0x0000006A System.Void DigitalRuby.RainMaker.BaseRainScript::UpdateWind()
+// 0x00000087 System.Void DigitalRuby.RainMaker.BaseRainScript::UpdateWind()
 extern void BaseRainScript_UpdateWind_mA41659544ECB63201BBB6A3FDD491C1DD8EDCB78 (void);
-// 0x0000006B System.Void DigitalRuby.RainMaker.BaseRainScript::CheckForRainChange()
+// 0x00000088 System.Void DigitalRuby.RainMaker.BaseRainScript::CheckForRainChange()
 extern void BaseRainScript_CheckForRainChange_mE5317F1FC80D6C43599DA16FE497250FA2A04B5B (void);
-// 0x0000006C System.Void DigitalRuby.RainMaker.BaseRainScript::Start()
+// 0x00000089 System.Void DigitalRuby.RainMaker.BaseRainScript::Start()
 extern void BaseRainScript_Start_m8687C15AE3D4E4C290BE64B94686C9E10AE83919 (void);
-// 0x0000006D System.Void DigitalRuby.RainMaker.BaseRainScript::Update()
+// 0x0000008A System.Void DigitalRuby.RainMaker.BaseRainScript::Update()
 extern void BaseRainScript_Update_mE588EF06A0EF3D575F40AB2BB402CE385C58AF63 (void);
-// 0x0000006E System.Single DigitalRuby.RainMaker.BaseRainScript::RainFallEmissionRate()
+// 0x0000008B System.Single DigitalRuby.RainMaker.BaseRainScript::RainFallEmissionRate()
 extern void BaseRainScript_RainFallEmissionRate_m6425004A3236A7BA58CAE25AD592A7D97C7948B2 (void);
-// 0x0000006F System.Single DigitalRuby.RainMaker.BaseRainScript::MistEmissionRate()
+// 0x0000008C System.Single DigitalRuby.RainMaker.BaseRainScript::MistEmissionRate()
 extern void BaseRainScript_MistEmissionRate_mF8FA9D9880ED829F5D7C61291AE929954A3AD311 (void);
-// 0x00000070 System.Boolean DigitalRuby.RainMaker.BaseRainScript::get_UseRainMistSoftParticles()
+// 0x0000008D System.Boolean DigitalRuby.RainMaker.BaseRainScript::get_UseRainMistSoftParticles()
 extern void BaseRainScript_get_UseRainMistSoftParticles_mC2CF7D770D915A63B20D69265EC27FA1E3F34E53 (void);
-// 0x00000071 System.Void DigitalRuby.RainMaker.BaseRainScript::.ctor()
+// 0x0000008E System.Void DigitalRuby.RainMaker.BaseRainScript::.ctor()
 extern void BaseRainScript__ctor_mDF34113D5FA6D3A9AF70649B226BC51B6FEFD422 (void);
-// 0x00000072 UnityEngine.AudioSource DigitalRuby.RainMaker.LoopingAudioSource::get_AudioSource()
+// 0x0000008F UnityEngine.AudioSource DigitalRuby.RainMaker.LoopingAudioSource::get_AudioSource()
 extern void LoopingAudioSource_get_AudioSource_m7065C418300FE55E18B4CC7F94DD0B104B10049E (void);
-// 0x00000073 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_AudioSource(UnityEngine.AudioSource)
+// 0x00000090 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_AudioSource(UnityEngine.AudioSource)
 extern void LoopingAudioSource_set_AudioSource_m78D358958BE0CC9674B7371D1DAC93531135D3E2 (void);
-// 0x00000074 System.Single DigitalRuby.RainMaker.LoopingAudioSource::get_TargetVolume()
+// 0x00000091 System.Single DigitalRuby.RainMaker.LoopingAudioSource::get_TargetVolume()
 extern void LoopingAudioSource_get_TargetVolume_mC8FAD031000782FBF9DB6683ED8A63A503CED47F (void);
-// 0x00000075 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_TargetVolume(System.Single)
+// 0x00000092 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_TargetVolume(System.Single)
 extern void LoopingAudioSource_set_TargetVolume_mB7E2108798FEBFD47D49006B9A6AD0273EDE0CBF (void);
-// 0x00000076 System.Void DigitalRuby.RainMaker.LoopingAudioSource::.ctor(UnityEngine.MonoBehaviour,UnityEngine.AudioClip,UnityEngine.Audio.AudioMixerGroup)
+// 0x00000093 System.Void DigitalRuby.RainMaker.LoopingAudioSource::.ctor(UnityEngine.MonoBehaviour,UnityEngine.AudioClip,UnityEngine.Audio.AudioMixerGroup)
 extern void LoopingAudioSource__ctor_m70739E5DB898B4D0456BB12A2A727D6A662B6FA3 (void);
-// 0x00000077 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Play(System.Single)
+// 0x00000094 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Play(System.Single)
 extern void LoopingAudioSource_Play_m2665DF0EAFCBF66BCFB90A1998BADAD038E58E45 (void);
-// 0x00000078 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Stop()
+// 0x00000095 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Stop()
 extern void LoopingAudioSource_Stop_m02E32099CFA66944960F5F5CB15261D64C481444 (void);
-// 0x00000079 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Update()
+// 0x00000096 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Update()
 extern void LoopingAudioSource_Update_m3B7209F06B2B228C94FDDBC6522E59281DC5EA02 (void);
-// 0x0000007A System.Void DigitalRuby.RainMaker.RainCollision::Start()
+// 0x00000097 System.Void DigitalRuby.RainMaker.RainCollision::Start()
 extern void RainCollision_Start_m0ED3FA833DD2C7AE60F96A84C9CDAC788AC2EB9E (void);
-// 0x0000007B System.Void DigitalRuby.RainMaker.RainCollision::Update()
+// 0x00000098 System.Void DigitalRuby.RainMaker.RainCollision::Update()
 extern void RainCollision_Update_mFB16DE326A7EEEEF3DE3DEC68D6DF488EA0686C5 (void);
-// 0x0000007C System.Void DigitalRuby.RainMaker.RainCollision::Emit(UnityEngine.ParticleSystem,UnityEngine.Vector3&)
+// 0x00000099 System.Void DigitalRuby.RainMaker.RainCollision::Emit(UnityEngine.ParticleSystem,UnityEngine.Vector3&)
 extern void RainCollision_Emit_m77930BD1CBDC56303E220E4B7F72AE082729E55D (void);
-// 0x0000007D System.Void DigitalRuby.RainMaker.RainCollision::OnParticleCollision(UnityEngine.GameObject)
+// 0x0000009A System.Void DigitalRuby.RainMaker.RainCollision::OnParticleCollision(UnityEngine.GameObject)
 extern void RainCollision_OnParticleCollision_m6BBBEE55CAD303E7FC6A08511832C5F650BA00EA (void);
-// 0x0000007E System.Void DigitalRuby.RainMaker.RainCollision::.ctor()
+// 0x0000009B System.Void DigitalRuby.RainMaker.RainCollision::.ctor()
 extern void RainCollision__ctor_m5C8560B6BAF26D67CE366929B2189B53DCF19979 (void);
-// 0x0000007F System.Void DigitalRuby.RainMaker.RainCollision::.cctor()
+// 0x0000009C System.Void DigitalRuby.RainMaker.RainCollision::.cctor()
 extern void RainCollision__cctor_m55AC4F38C37E71FC0BB19C7F60472A5E6FB323AE (void);
-// 0x00000080 System.Void DigitalRuby.RainMaker.RainScript::UpdateRain()
+// 0x0000009D System.Void DigitalRuby.RainMaker.RainScript::UpdateRain()
 extern void RainScript_UpdateRain_mC8F27ED19ABEBC9F75B7E269D3824A76D43029E2 (void);
-// 0x00000081 System.Void DigitalRuby.RainMaker.RainScript::Start()
+// 0x0000009E System.Void DigitalRuby.RainMaker.RainScript::Start()
 extern void RainScript_Start_m0CA9E19727CEB42CBC22F00292BE841FE4FF8C5C (void);
-// 0x00000082 System.Void DigitalRuby.RainMaker.RainScript::Update()
+// 0x0000009F System.Void DigitalRuby.RainMaker.RainScript::Update()
 extern void RainScript_Update_m83DF982F04CDCEF51F07D745E03473E438FFBF45 (void);
-// 0x00000083 System.Void DigitalRuby.RainMaker.RainScript::.ctor()
+// 0x000000A0 System.Void DigitalRuby.RainMaker.RainScript::.ctor()
 extern void RainScript__ctor_m904ED00F45D16299FFAC4A0259CF01F6DF3934D1 (void);
-// 0x00000084 System.Void DigitalRuby.RainMaker.RainScript2D::EmitExplosion(UnityEngine.Vector3&)
+// 0x000000A1 System.Void DigitalRuby.RainMaker.RainScript2D::EmitExplosion(UnityEngine.Vector3&)
 extern void RainScript2D_EmitExplosion_mF622AE9E524EB074CA3E81E8CA28AC066A41F106 (void);
-// 0x00000085 System.Void DigitalRuby.RainMaker.RainScript2D::TransformParticleSystem(UnityEngine.ParticleSystem,UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x000000A2 System.Void DigitalRuby.RainMaker.RainScript2D::TransformParticleSystem(UnityEngine.ParticleSystem,UnityEngine.Vector2,UnityEngine.Vector2)
 extern void RainScript2D_TransformParticleSystem_mCA622E7F4A450D1C75D1B052401E3D749B00AC11 (void);
-// 0x00000086 System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsRainParticles()
+// 0x000000A3 System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsRainParticles()
 extern void RainScript2D_CheckForCollisionsRainParticles_m539998E873D8F1D2E3ED2FB6F15DACFC6D397104 (void);
-// 0x00000087 System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsMistParticles()
+// 0x000000A4 System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsMistParticles()
 extern void RainScript2D_CheckForCollisionsMistParticles_m4D5BD3DB838149AF935BB7C7789076D5561B6CB2 (void);
-// 0x00000088 System.Void DigitalRuby.RainMaker.RainScript2D::Start()
+// 0x000000A5 System.Void DigitalRuby.RainMaker.RainScript2D::Start()
 extern void RainScript2D_Start_mAC6B71E67E342520A17C733859F4CF03783A8953 (void);
-// 0x00000089 System.Void DigitalRuby.RainMaker.RainScript2D::Update()
+// 0x000000A6 System.Void DigitalRuby.RainMaker.RainScript2D::Update()
 extern void RainScript2D_Update_mFBA340A29A023F1F547E771CC085F3FBF40503E9 (void);
-// 0x0000008A System.Single DigitalRuby.RainMaker.RainScript2D::RainFallEmissionRate()
+// 0x000000A7 System.Single DigitalRuby.RainMaker.RainScript2D::RainFallEmissionRate()
 extern void RainScript2D_RainFallEmissionRate_m62AE412DFEA8BB0BFC08D27ACA83761F4DFB74E0 (void);
-// 0x0000008B System.Boolean DigitalRuby.RainMaker.RainScript2D::get_UseRainMistSoftParticles()
+// 0x000000A8 System.Boolean DigitalRuby.RainMaker.RainScript2D::get_UseRainMistSoftParticles()
 extern void RainScript2D_get_UseRainMistSoftParticles_mB3B399F4961D21506DEF9A09833B2DA3CC941924 (void);
-// 0x0000008C System.Void DigitalRuby.RainMaker.RainScript2D::.ctor()
+// 0x000000A9 System.Void DigitalRuby.RainMaker.RainScript2D::.ctor()
 extern void RainScript2D__ctor_m27142636A537D5322DD2773E52474BF24E169D81 (void);
-// 0x0000008D System.Void DigitalRuby.RainMaker.RainScript2D::.cctor()
+// 0x000000AA System.Void DigitalRuby.RainMaker.RainScript2D::.cctor()
 extern void RainScript2D__cctor_m266418890BBE84173070244DBF98212F6DD97BAF (void);
-static Il2CppMethodPointer s_methodPointers[141] = 
+static Il2CppMethodPointer s_methodPointers[170] = 
 {
 	Hand_Start_mF97170CC92093DE16E9DD633908D8FF76D6386DB,
 	Hand_FixedUpdate_mDE5734168E9833CD0FE927CEFEE557EB31BDC133,
@@ -399,6 +457,35 @@ static Il2CppMethodPointer s_methodPointers[141] =
 	PlayerController_resetPosition_mD02735A2318EA4963D63AD8FC107FB8D5FBDD13B,
 	PlayerController_resetPosition_mAF5DCFB3DD220CC83DFC416C0213E3F699330655,
 	PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33,
+	ScreenShakeVR_Awake_m82AF692A51E922A36C7603EAC778455A141BD2E1,
+	ScreenShakeVR_OnEnable_mC696AF0F08D15C67A4A2A9D74CA53F1C3C93561E,
+	ScreenShakeVR_Shake_m19546272453562863E4B190AF271F7379662D83C,
+	ScreenShakeVR_TriggerShake_mB7F19D7255FE81BC27F0E16C8A47E11D18BED99E,
+	ScreenShakeVR_Update_m79D6882165B67C841494CCC5F2C96C0C499F627A,
+	ScreenShakeVR_OnRenderImage_mE54075EEE423F1C70DC9EFF3F9D191F2E9C7407F,
+	ScreenShakeVR__ctor_m1419F560DBCDF64622E460315B766A4B4081384B,
+	ShakeEvent_get_finished_m9E5541B407040575E7D31169E271DC44FD8FC675,
+	ShakeEvent_get_currentStrength_m1425A519FF403CBE2B33A2789695866CF9FCEFBB,
+	ShakeEvent__ctor_m19C06898440982F51B02DB797B2CA1C631D85957,
+	ShakeEvent_Update_m3193B2689E55ECFBC5EAA6763FCBB2700DF87033,
+	StormScene_Start_m32B47AF90C65C649CCA53E4BB3FC488761404775,
+	StormScene_Update_m5514C31722A0DF58FD778CB59EA6DDC2D3A86ADE,
+	StormScene_passiveShake_mC83E50032E854FBA7463089BAB91AD9713995FFA,
+	StormScene_Storm_m51EB4EB5994072E4FE5F2C9CC0A9174A76736EDD,
+	StormScene_initiateStorm_m0D1E24001E520D2A0E2A29CBE1F0B8423CC448BB,
+	StormScene__ctor_m95EC0B28FCF6D98D2DF5325BD822122C2E844A07,
+	U3CpassiveShakeU3Ed__6__ctor_mEA22A47719EE12CBE2F5E39E759EA87533A94C54,
+	U3CpassiveShakeU3Ed__6_System_IDisposable_Dispose_mA7FD32239E809EC6CD538C804B19D1770AD7F5AF,
+	U3CpassiveShakeU3Ed__6_MoveNext_m83FEB74C94FAB1D40A5068558A4924E13BE9F9AD,
+	U3CpassiveShakeU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0EE871D8ECA5AEAEA497FEF5BC0D72F63AC54154,
+	U3CpassiveShakeU3Ed__6_System_Collections_IEnumerator_Reset_m13B5059B57C18DB9A8127DAE134CEE4050990565,
+	U3CpassiveShakeU3Ed__6_System_Collections_IEnumerator_get_Current_m78C26F8B018D6DE6D311EE72720DE95650C36C84,
+	U3CStormU3Ed__7__ctor_m36CD688ED10473B90FAD150AA6455A819B85B950,
+	U3CStormU3Ed__7_System_IDisposable_Dispose_mA39162464F2A23647AC138C1122E245D8523BA78,
+	U3CStormU3Ed__7_MoveNext_m9CDC92119E78234416518B9D08044BCF30658EBD,
+	U3CStormU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7FC9A3983EEF707AA67108DDB93457CF2A8861F1,
+	U3CStormU3Ed__7_System_Collections_IEnumerator_Reset_mE527BF47F0B65B65AD9C95BDDD7DFF5336324FF0,
+	U3CStormU3Ed__7_System_Collections_IEnumerator_get_Current_m64DE195E54CA195AC4BA513119447841E47FCA91,
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 	BaseRainScript_UpdateWind_mA41659544ECB63201BBB6A3FDD491C1DD8EDCB78,
@@ -438,7 +525,7 @@ static Il2CppMethodPointer s_methodPointers[141] =
 	RainScript2D__ctor_m27142636A537D5322DD2773E52474BF24E169D81,
 	RainScript2D__cctor_m266418890BBE84173070244DBF98212F6DD97BAF,
 };
-static const int32_t s_InvokerIndices[141] = 
+static const int32_t s_InvokerIndices[170] = 
 {
 	4774,
 	4774,
@@ -545,6 +632,35 @@ static const int32_t s_InvokerIndices[141] =
 	4774,
 	4774,
 	4774,
+	1091,
+	6122,
+	4774,
+	2074,
+	4774,
+	4579,
+	4710,
+	1091,
+	3809,
+	4774,
+	4774,
+	4667,
+	4667,
+	4774,
+	4774,
+	3750,
+	4774,
+	4579,
+	4667,
+	4774,
+	4667,
+	3750,
+	4774,
+	4579,
+	4667,
+	4774,
+	4667,
+	4774,
+	4774,
 	4774,
 	4774,
 	4774,
@@ -566,7 +682,7 @@ static const int32_t s_InvokerIndices[141] =
 	2059,
 	3774,
 	4774,
-	7333,
+	7334,
 	4774,
 	4774,
 	4774,
@@ -580,13 +696,13 @@ static const int32_t s_InvokerIndices[141] =
 	4710,
 	4579,
 	4774,
-	7333,
+	7334,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	141,
+	170,
 	s_methodPointers,
 	0,
 	NULL,
