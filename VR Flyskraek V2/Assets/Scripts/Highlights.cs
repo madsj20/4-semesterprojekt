@@ -10,6 +10,8 @@ public class Highlights : MonoBehaviour
     public Color highlightColor = Color.yellow; // the color to use when highlighting an object
     public GameObject[] highlightObjects; // the specific objects to highlight
     private Transform lastHitObject = null; // the last object that was highlighted
+    public Material material;
+    public GameObject image;
 
     void Update()
     {
@@ -50,6 +52,10 @@ public class Highlights : MonoBehaviour
         if (renderer != null)
         {
             renderer.material.color = highlightColor;
+            if (renderer.material.color == highlightColor)
+            {
+                image.GetComponent<SpriteRenderer>().enabled = true;
+            }
         }
     }
 
@@ -59,7 +65,8 @@ public class Highlights : MonoBehaviour
         MeshRenderer renderer = obj.gameObject.GetComponent<MeshRenderer>();
         if (renderer != null)
         {
-            renderer.material.color = Color.white;
+            renderer.material = material;
+            image.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: e23efc18160f4044ba594d0f7fede5a6
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 5ab55983ed6e1d04dab478280c8f4680
+  - enabled: 1
     path: Assets/Samples/OpenXR Plugin/1.5.3/Controller/ControllerSample.unity
     guid: edb91e86bd8b7dc4ca40ad6c3167de73
   m_configObjects:
@@ -23,4 +26,6 @@ EditorBuildSettings:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a9a6963505ddf7f4d886008c6dc86122,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 23e03b2cadb13bc4ebe1b2140dd71a41,
       type: 2}
