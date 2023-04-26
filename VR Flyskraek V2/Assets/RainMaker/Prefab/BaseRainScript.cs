@@ -30,6 +30,9 @@ namespace DigitalRuby.RainMaker
         [Tooltip("Heavy rain looping clip")]
         public AudioClip RainSoundHeavy;
 
+        [Tooltip("Heavy rain looping clip")]
+        public AudioClip RainThunder;
+
         [Tooltip("AudoMixer used for the rain sound")]
         public AudioMixerGroup RainSoundAudioMixer;
 
@@ -73,6 +76,7 @@ namespace DigitalRuby.RainMaker
         protected LoopingAudioSource audioSourceRainHeavy;
         protected LoopingAudioSource audioSourceRainCurrent;
         protected LoopingAudioSource audioSourceWind;
+        protected LoopingAudioSource audioSourceThunder;
         protected Material rainMaterial;
         protected Material rainExplosionMaterial;
         protected Material rainMistMaterial;
@@ -169,7 +173,8 @@ namespace DigitalRuby.RainMaker
                             audioSourceRainCurrent.Stop();
                         }
                         audioSourceRainCurrent = newSource;
-                        audioSourceRainCurrent.Play(1.0f);
+                        audioSourceRainCurrent.Play(0.5f);
+                        audioSourceThunder.Play(1.0f);
                     }
                     if (RainFallParticleSystem != null)
                     {
@@ -233,6 +238,7 @@ namespace DigitalRuby.RainMaker
             audioSourceRainMedium = new LoopingAudioSource(this, RainSoundMedium, RainSoundAudioMixer);
             audioSourceRainHeavy = new LoopingAudioSource(this, RainSoundHeavy, RainSoundAudioMixer);
             audioSourceWind = new LoopingAudioSource(this, WindSound, RainSoundAudioMixer);
+            audioSourceThunder = new LoopingAudioSource(this, RainThunder, RainSoundAudioMixer);
 
             if (RainFallParticleSystem != null)
             {
@@ -290,6 +296,7 @@ namespace DigitalRuby.RainMaker
             audioSourceRainLight.Update();
             audioSourceRainMedium.Update();
             audioSourceRainHeavy.Update();
+            audioSourceThunder.Update();
         }
 
         protected virtual float RainFallEmissionRate()
