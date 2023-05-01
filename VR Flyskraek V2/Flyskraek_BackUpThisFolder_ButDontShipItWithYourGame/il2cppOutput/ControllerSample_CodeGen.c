@@ -360,7 +360,7 @@ static const int32_t s_InvokerIndices[102] =
 	4774,
 	4774,
 	4774,
-	7333,
+	7330,
 	4774,
 	3320,
 	4774,
@@ -404,7 +404,7 @@ static const int32_t s_InvokerIndices[102] =
 	3774,
 	3774,
 	4774,
-	7333,
+	7330,
 	4627,
 	3738,
 	4667,
@@ -424,7 +424,7 @@ static const int32_t s_InvokerIndices[102] =
 	3774,
 	4774,
 	4774,
-	7333,
+	7330,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_ControllerSample_CodeGenModule;
 const Il2CppCodeGenModule g_ControllerSample_CodeGenModule = 

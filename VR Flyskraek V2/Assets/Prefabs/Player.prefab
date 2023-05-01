@@ -1,67 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &992943021265137446
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3472023523774228551}
-  m_Layer: 0
-  m_Name: Palm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3472023523774228551
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992943021265137446}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0376, y: 0.0214, z: 0.0083}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7026754993150472604}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1922370081733650629
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5221287614123583186}
-  m_Layer: 0
-  m_Name: Palm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5221287614123583186
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922370081733650629}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.0376, y: 0.0196, z: 0.008299828}
-  m_LocalScale: {x: -1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7026754992281028227}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -270, y: 0, z: -180}
 --- !u!1 &7354014332663800355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,11 +1850,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftHand
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 3fe0047a9867e114293dc2223744932d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1392595203298398570, guid: 3fe0047a9867e114293dc2223744932d,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -2384,17 +2317,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f827bbeac515b469ce799f17448c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  animationSpeed: 0
+  followObject: {fileID: 0}
   followSpeed: 30
   rotateSpeed: 100
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
-  palm: {fileID: 0}
-  reachDistance: 0.1
-  joinDistance: 0.05
-  grabbableLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!4 &7962930630543682525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8607304493346783830, guid: 3fe0047a9867e114293dc2223744932d,
@@ -2752,11 +2680,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RightHand
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 3fe0047a9867e114293dc2223744932d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1392595203298398570, guid: 3fe0047a9867e114293dc2223744932d,
         type: 3}
@@ -3213,17 +3136,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f827bbeac515b469ce799f17448c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  animationSpeed: 0
+  followObject: {fileID: 0}
   followSpeed: 30
   rotateSpeed: 100
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
-  palm: {fileID: 0}
-  reachDistance: 0.1
-  joinDistance: 0.05
-  grabbableLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!4 &7962930631947623618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8607304493346783830, guid: 3fe0047a9867e114293dc2223744932d,
