@@ -8,9 +8,11 @@ public class LigtningSpawn : MonoBehaviour
     public int numberOfObjects;
     public float spawnRadius;
     public Transform spawnPoint;
+    public Blinking blink;
 
     public void Spawn()
     {
+        blink.RunBlink();
         for (int i = 0; i < numberOfObjects; i++)
         {
             Vector3 randomPos = Random.insideUnitSphere * spawnRadius;

@@ -8,6 +8,7 @@ public class StormScene : MonoBehaviour
     public AudioSource passengerSeatingAnnouncement;
     private bool passiveShaking;
     private bool forceStopShaking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +78,7 @@ public class StormScene : MonoBehaviour
 
     public void initiateStorm()
     {
+
         StartCoroutine(Storm());
     }
 }
