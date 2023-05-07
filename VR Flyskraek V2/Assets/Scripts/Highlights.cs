@@ -1,73 +1,106 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Highlights : MonoBehaviour
 {
-
-    public float maxDistance = 10f; // the maximum distance at which objects can be highlighted
+    public float highlightTime = 2f; // the duration for which each object will be highlighted
     public Color highlightColor = Color.yellow; // the color to use when highlighting an object
     public GameObject[] highlightObjects; // the specific objects to highlight
-    private Transform lastHitObject = null; // the last object that was highlighted
-    public Material material;
-    public GameObject image;
+
+    private bool highlightingEnabled = false;
+    private float highlightTimer = 0f;
+    private int highlightedIndex = -1;
+    private Dictionary<GameObject, Material> originalMaterials = new Dictionary<GameObject, Material>(); // dictionary to store original materials of the objects
+
+    void Start()
+    {
+        // store the original materials of the objects
+        foreach (GameObject obj in highlightObjects)
+        {
+            MeshRenderer renderer = obj.GetComponent<MeshRenderer>();
+            if (renderer != null)
+            {
+                originalMaterials[obj] = renderer.material;
+            }
+        }
+    }
 
     void Update()
     {
-        RaycastHit hit;
-
-        // cast a ray from the VR camera's position in the direction it's looking
-        if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
+        // check if highlighting is currently enabled
+        if (highlightingEnabled)
         {
-            // check if the object hit by the ray is in the list of objects to highlight
-            if (highlightObjects != null && System.Array.IndexOf(highlightObjects, hit.collider.gameObject) != -1)
+            // update the highlight timer
+            highlightTimer += Time.deltaTime;
+
+            // check if the timer has expired
+            if (highlightTimer >= highlightTime)
             {
-                // unhighlight the last object that was highlighted
-                if (lastHitObject != null && lastHitObject != hit.transform)
+                // unhighlight the current object
+                UnhighlightObject(highlightedIndex);
+
+                // move on to the next object
+                highlightedIndex++;
+
+                // check if we have looped through all the objects
+                if (highlightedIndex >= highlightObjects.Length)
                 {
-                    UnhighlightObject(lastHitObject);
+                    // disable highlighting
+                    highlightingEnabled = false;
+
+                    // reset the highlight timer and index
+                    highlightedIndex = -1;
+                    highlightTimer = 0f;
                 }
-
-                // highlight the object hit by the ray
-                HighlightObject(hit.transform);
-                lastHitObject = hit.transform;
-            }
-        }
-        else
-        {
-            // unhighlight the last object that was highlighted
-            if (lastHitObject != null)
-            {
-                UnhighlightObject(lastHitObject);
-                lastHitObject = null;
+                else
+                {
+                    // highlight the next object
+                    HighlightObject(highlightedIndex);
+                    highlightTimer = 0f;
+                }
             }
         }
     }
 
-    void HighlightObject(Transform obj)
+
+    public void StartHighlighting()
     {
-        // change the color of the object's material to the highlight color
-        MeshRenderer renderer = obj.gameObject.GetComponent<MeshRenderer>();
+        // enable highlighting and start with the first object in the list
+        highlightingEnabled = true;
+        highlightedIndex = 0;
+        HighlightObject(highlightedIndex);
+        highlightTimer = 0f;
+    }
+
+    void HighlightObject(int index)
+    {
+        // highlight the specified object
+        GameObject obj = highlightObjects[index];
+        MeshRenderer renderer = obj.GetComponent<MeshRenderer>();
         if (renderer != null)
         {
-            renderer.material.color = highlightColor;
-            if (renderer.material.color == highlightColor)
+            Material originalMaterial;
+            if (originalMaterials.TryGetValue(obj, out originalMaterial))
             {
-                image.GetComponent<SpriteRenderer>().enabled = true;
+                renderer.material = new Material(originalMaterial); // create a copy of the original material
+                renderer.material.color = highlightColor; // change the color of the material
+
             }
         }
     }
 
-    void UnhighlightObject(Transform obj)
+    void UnhighlightObject(int index)
     {
-        // restore the object's material to its original color
-        MeshRenderer renderer = obj.gameObject.GetComponent<MeshRenderer>();
+        // unhighlight the specified object and restore its original material
+        GameObject obj = highlightObjects[index];
+        MeshRenderer renderer = obj.GetComponent<MeshRenderer>();
         if (renderer != null)
         {
-            renderer.material = material;
-            image.GetComponent<SpriteRenderer>().enabled = false;
+            Material originalMaterial;
+            if (originalMaterials.TryGetValue(obj, out originalMaterial))
+            {
+                renderer.material = originalMaterial;
+            }
         }
     }
 }
-
