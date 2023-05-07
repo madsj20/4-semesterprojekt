@@ -8,11 +8,12 @@ public class StormScene : MonoBehaviour
     public AudioSource passengerSeatingAnnouncement;
     private bool passiveShaking;
     private bool forceStopShaking = false;
+    public PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,12 +21,33 @@ public class StormScene : MonoBehaviour
     {
         if (passiveShaking && !forceStopShaking)
         {
-            StartCoroutine(passiveShake());
+            StartCoroutine(passiveShakeV2());
             passiveShaking = false;
         }
     }
 
     //passive automatic shake funktion
+    private IEnumerator passiveShakeV2()
+    {
+        //shakeTime determines how long on shake takes
+        float shakeTime;
+        //magnitude determines how much the players head should move
+        float magnitude;
+        //shakeDelay determines the delay between shakes
+        float shakeDelay;
+
+        //Randomizing screenshake
+        shakeTime = Random.Range(0.1f, 0.03f);
+        magnitude = Random.Range(-0.1f, 0.1f);
+        shakeDelay = Random.Range(0.2f, 1.5f);
+
+        playerController.InitScreenShake(magnitude, shakeTime);
+        //shakeTime has to be added and multiplied by 2, to give the animation time to finish, bacause shakeTime is used 2 times in the original function in the PlayerController script
+        yield return new WaitForSeconds(shakeDelay+(shakeTime*2));
+        passiveShaking = true;
+    }
+
+    //Første itteration af screenshake
     private IEnumerator passiveShake()
     {
         float shakeTime;
@@ -40,28 +62,9 @@ public class StormScene : MonoBehaviour
         yield return new WaitForSeconds(shakeTime);
         passiveShaking = true;
     }
-
+    
     private IEnumerator Storm()
     {
-        /*
-        //Stewardesse Passenger Seating Announcement
-        passengerSeatingAnnouncement.Play();
-        yield return new WaitForSeconds(5);
-        ScreenShakeVR.TriggerShake(0.1f, 0.5f);
-        yield return new WaitForSeconds(1);
-        ScreenShakeVR.TriggerShake(0.2f, 1f);
-        yield return new WaitForSeconds(2);
-        ScreenShakeVR.TriggerShake(0.1f, 0.5f);
-        yield return new WaitForSeconds(4);
-        ScreenShakeVR.TriggerShake(0.3f, 2f);
-        yield return new WaitForSeconds(2);
-        ScreenShakeVR.TriggerShake(0.7f, 4f);
-        yield return new WaitForSeconds(2);
-        ScreenShakeVR.TriggerShake(0.1f, 0.5f);
-        //Hvis ikke nok, ændre til 1.2 magnitude
-        yield return new WaitForSeconds(6);
-        ScreenShakeVR.TriggerShake(1f, 6f);*/
-
         //Activate passive shaking
         passiveShaking = true;
 
@@ -71,14 +74,12 @@ public class StormScene : MonoBehaviour
         yield return new WaitForSeconds(5);
 
         //Begin Turbulens
-        //ScreenShakeVR.TriggerShake(0.1f, 20);
 
 
     }
 
     public void initiateStorm()
     {
-
         StartCoroutine(Storm());
     }
 }

@@ -38654,7 +38654,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -38891,6 +38891,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2024704696 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6138397903394039962, guid: 20d9ffc7b9666f6429be90e92319611e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6138397902167383496}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d767b042be4c04c8c64dc958c0ec06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029248794
 GameObject:
   m_ObjectHideFlags: 0
@@ -39769,6 +39781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crewSeatingAnnouncement: {fileID: 840755794}
   passengerSeatingAnnouncement: {fileID: 111133364}
+  playerController: {fileID: 2024704696}
 --- !u!114 &2103119164
 MonoBehaviour:
   m_ObjectHideFlags: 0

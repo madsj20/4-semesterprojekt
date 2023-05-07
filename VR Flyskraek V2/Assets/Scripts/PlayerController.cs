@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform resetTransform;
     [SerializeField] GameObject player;
     [SerializeField] Camera playerHead;
+    Vector3 playerHeadPos;
+    Vector3 newPlayerHeadPos;
 
     public InputActionReference resetPositionReference = null;
 
@@ -46,5 +49,50 @@ public class PlayerController : MonoBehaviour
         //Finds difference between the resetTransform position and the playerHead postition, and applies it to the player/XR Origin position
         var distanceDiff = resetTransform.position - playerHead.transform.position;
         player.transform.position += distanceDiff;
+    }
+
+    //This function can be called in another script to run the screenshake
+    public void InitScreenShake(float magnitude, float duration)
+    {
+        StartCoroutine(ScreenShake(magnitude, duration));
+    }
+
+    //Change magnitude to choose how much the head should move, and change duration to choose how long the transition lasts
+    public IEnumerator ScreenShake(float magnitude, float duration)
+    {
+        //Finds difference between the resetTransform rotation and the playerHead rotation, and applies it to the player/XR Origin rotation
+        //var rotationAngleY = resetTransform.rotation.eulerAngles.y - playerHead.transform.rotation.eulerAngles.y;
+        //player.transform.Rotate(0, rotationAngleY, 0);
+        //Finds difference between the resetTransform position and the playerHead postition, and applies it to the player/XR Origin position
+        //var distanceDiff = resetTransform.position - playerHead.transform.position;
+        //player.transform.position += distanceDiff;
+
+
+        //saves current player head position
+        playerHeadPos = player.transform.position;
+        //Creates the new player head position
+        newPlayerHeadPos = new Vector3(playerHeadPos.x, playerHeadPos.y + magnitude, playerHeadPos.z);
+        
+        float time = 0;
+        Vector3 startPosition = transform.position;
+        while (time < duration)
+        {
+            //Lerp makes a smooth transition from the player heads current position to the new position
+            player.transform.position = Vector3.Lerp(playerHeadPos, newPlayerHeadPos, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        //ensures that player head position is infact the new player head position
+        //player.transform.position = newPlayerHeadPos;
+        time = 0;
+        while (time < duration)
+        {
+            //Lerp position back to original position
+            player.transform.position = Vector3.Lerp(newPlayerHeadPos, playerHeadPos, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        //ensures that player head position is infact the old player head position
+        //player.transform.position = playerHeadPos;
     }
 }

@@ -53,18 +53,18 @@ static Il2CppMethodPointer s_methodPointers[12] =
 };
 static const int32_t s_InvokerIndices[12] = 
 {
-	6834,
-	6257,
-	6843,
-	7327,
-	4805,
-	4805,
-	4610,
-	4610,
-	4610,
-	4610,
-	4805,
-	7367,
+	6835,
+	6258,
+	6844,
+	7328,
+	4806,
+	4806,
+	4611,
+	4611,
+	4611,
+	4611,
+	4806,
+	7368,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_MockHMD_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_MockHMD_CodeGenModule = 

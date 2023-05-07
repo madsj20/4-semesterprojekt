@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 
 [ExecuteInEditMode]
-public class ScreenShakeVR : MonoBehaviour
+public class ScreenShakeVR_V2 : MonoBehaviour
 {
 
-    public static ScreenShakeVR instance;
+    public static ScreenShakeVR_V2 instance;
 
     Material material;
 
