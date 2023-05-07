@@ -37,9 +37,9 @@ public class StormScene : MonoBehaviour
         float shakeDelay;
 
         //Randomizing screenshake
-        shakeTime = Random.Range(0.1f, 0.03f);
-        magnitude = Random.Range(-0.1f, 0.1f);
-        shakeDelay = Random.Range(0.2f, 1.5f);
+        shakeTime = Random.Range(0.15f, 0.03f);
+        magnitude = Random.Range(-0.03f, -0.01f);
+        shakeDelay = Random.Range(0.2f, 2.5f);
 
         playerController.InitScreenShake(magnitude, shakeTime);
         //shakeTime has to be added and multiplied by 2, to give the animation time to finish, bacause shakeTime is used 2 times in the original function in the PlayerController script
