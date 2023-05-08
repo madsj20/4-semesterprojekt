@@ -49,6 +49,33 @@ public class Blinking : MonoBehaviour
 
     }
 
+    IEnumerator BlinkOff()
+    {
+        Debug.Log("Coroutine Started");
+        //Fades to black
+        CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
+        Debug.Log("Start Fade");
+        while (canvasGroup.alpha < 1)
+        {
+            canvasGroup.alpha += Time.deltaTime * blinkCloseSpeed;
+            yield return null;
+        }
+        //Waits a while
+        Debug.Log("Wait");
+        yield return new WaitForSeconds(blinkDuration);
+        Debug.Log("Stop Waiting");
+        //Fades out
+        while (canvasGroup.alpha > 0)
+        {
+            canvasGroup.alpha -= Time.deltaTime * blinkOpenSpeed;
+            yield return null;
+        }
+        Debug.Log("Done Fading out");
+        canvasGroup.interactable = false;
+        yield return null;
+
+    }
+
     /*IEnumerator Blink()
     {
         Debug.Log("Coroutine Started");
@@ -79,5 +106,10 @@ public class Blinking : MonoBehaviour
     {
         Debug.Log("Blink Initiated");
         StartCoroutine(Blink());
+    }
+    public void RunBlinkOff()
+    {
+        Debug.Log("Blink Initiated");
+        StartCoroutine(BlinkOff());
     }
 }

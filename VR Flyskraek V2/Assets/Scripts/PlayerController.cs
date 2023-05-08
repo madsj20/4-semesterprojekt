@@ -74,7 +74,6 @@ public class PlayerController : MonoBehaviour
         newPlayerHeadPos = new Vector3(playerHeadPos.x, playerHeadPos.y + magnitude, playerHeadPos.z);
         
         float time = 0;
-        Vector3 startPosition = transform.position;
         while (time < duration)
         {
             //Lerp makes a smooth transition from the player heads current position to the new position
@@ -83,7 +82,7 @@ public class PlayerController : MonoBehaviour
             yield return null;
         }
         //ensures that player head position is infact the new player head position
-        //player.transform.position = newPlayerHeadPos;
+        player.transform.position = newPlayerHeadPos;
         time = 0;
         while (time < duration)
         {
@@ -93,6 +92,6 @@ public class PlayerController : MonoBehaviour
             yield return null;
         }
         //ensures that player head position is infact the old player head position
-        //player.transform.position = playerHeadPos;
+        player.transform.position = playerHeadPos;
     }
 }
