@@ -841,7 +841,6 @@ Transform:
   - {fileID: 1672163063}
   - {fileID: 1112839493}
   - {fileID: 1194889449}
-  - {fileID: 1889667742}
   - {fileID: 653570949}
   - {fileID: 271707951}
   - {fileID: 751176854}
@@ -1884,7 +1883,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &271707953
 Rigidbody:
@@ -2759,7 +2758,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &370211839
 BoxCollider:
@@ -3817,7 +3816,7 @@ Transform:
   - {fileID: 1425529931}
   - {fileID: 489329772}
   m_Father: {fileID: 89988737}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &465145803
 GameObject:
@@ -5344,7 +5343,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &653570950
 BoxCollider:
@@ -6192,7 +6191,7 @@ Transform:
   - {fileID: 42927045}
   - {fileID: 1960943}
   m_Father: {fileID: 89988737}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &756668350
 GameObject:
@@ -7621,7 +7620,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &875037832
 BoxCollider:
@@ -8414,6 +8413,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2103119163}
         m_TargetAssemblyTypeName: StormScene, Assembly-CSharp
         m_MethodName: initiateStorm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2103119165}
+        m_TargetAssemblyTypeName: Highlights, Assembly-CSharp
+        m_MethodName: StartHighlighting
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36463,7 +36474,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e90561767f2ec6943b377e67e5b758d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e90561767f2ec6943b377e67e5b758d4,
         type: 3}
@@ -39898,7 +39909,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e90561767f2ec6943b377e67e5b758d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e90561767f2ec6943b377e67e5b758d4,
         type: 3}
@@ -40086,7 +40097,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -41161,6 +41172,7 @@ GameObject:
   - component: {fileID: 2103119161}
   - component: {fileID: 2103119163}
   - component: {fileID: 2103119164}
+  - component: {fileID: 2103119165}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -41239,6 +41251,27 @@ MonoBehaviour:
   spawnRadius: 200
   spawnPoint: {fileID: 1672163063}
   blink: {fileID: 81268585}
+--- !u!114 &2103119165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103119160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c84a56b2b43d94db36011cc91d5693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightTime: 2
+  highlightColor: {r: 0.06795954, g: 1, b: 0.015686274, a: 1}
+  highlightObjects:
+  - {fileID: 1112839494}
+  - {fileID: 1690550170}
+  - {fileID: 524673119}
+  - {fileID: 848581089}
+  - {fileID: 1642533139}
+  - {fileID: 1691723331}
 --- !u!1 &2103668389
 GameObject:
   m_ObjectHideFlags: 0
@@ -41968,7 +42001,7 @@ PrefabInstance:
         type: 3}
       propertyPath: image
       value: 
-      objectReference: {fileID: 1889667741}
+      objectReference: {fileID: 0}
     - target: {fileID: 6138397902585619084, guid: 20d9ffc7b9666f6429be90e92319611e,
         type: 3}
       propertyPath: Renderer
@@ -42123,6 +42156,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 6138397902078981085, guid: 20d9ffc7b9666f6429be90e92319611e, type: 3}
     - {fileID: 6138397903778018935, guid: 20d9ffc7b9666f6429be90e92319611e, type: 3}
+    - {fileID: 6138397902585619084, guid: 20d9ffc7b9666f6429be90e92319611e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 20d9ffc7b9666f6429be90e92319611e, type: 3}
 --- !u!20 &6138397902167383497 stripped
 Camera:
