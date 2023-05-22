@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Highlights : MonoBehaviour
 {
     public float highlightTime = 2f; // the duration for which each object will be highlighted
@@ -59,6 +60,29 @@ public class Highlights : MonoBehaviour
                     highlightTimer = 0f;
                 }
             }
+        }
+
+        switch (highlightedIndex)
+        {
+            case -1:
+                case 0:
+                highlightingEnabled = true;
+                highlightTimer = 0f;
+                break;
+                case 1: highlightingEnabled = false;
+                highlightTimer = 0f; break;
+                case 2: highlightingEnabled = false;
+                highlightTimer = 0f; break;
+                case 3: highlightingEnabled = false;
+                highlightTimer = 0f; break;
+                case 4: highlightingEnabled = false;
+                highlightTimer = 0f; break;
+                case 5: highlightingEnabled = false;
+                highlightTimer = 0f; break;
+                case 6: highlightingEnabled = false;
+                highlightTimer = 0f; break;
+                case 7: highlightingEnabled = false;
+                highlightTimer = 0f; break;
         }
     }
 

@@ -18,11 +18,14 @@ public class StormScene : MonoBehaviour
     public LigtningSpawn lightningSpawn;
     public ButtonEvents buttonEvents;
     public Blinking blink;
+    public IntroScene introScene;
     public AudioSource shakeSound;
     public AudioSource turbulens1;
     public AudioSource turbulens2;
     public AudioSource cabinNoise;
     public AudioSource creaking;
+    public GameObject maleBelt;
+    public GameObject femaleBelt;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +38,8 @@ public class StormScene : MonoBehaviour
     {
         if (isConnected && introEnded)
         {
+            introScene.UnhighlightObject(maleBelt);
+            introScene.UnhighlightObject(femaleBelt);
             StartCoroutine(Storm());
             isConnected = false;
         }
@@ -130,17 +135,6 @@ public class StormScene : MonoBehaviour
 
         //Starting mild shake
         mildShaking = true;
-
-        //wait 5 seconds before announcement
-        yield return new WaitForSeconds(5);
-        passengerSeatingAnnouncement.Play();
-
-
-        //Captain Crew Seating Announcement
-        yield return new WaitForSeconds(20);
-        crewSeatingAnnouncement.Play();
-        yield return new WaitForSeconds(5);
-
 
         //starts storm 
         yield return new WaitForSeconds(10);
