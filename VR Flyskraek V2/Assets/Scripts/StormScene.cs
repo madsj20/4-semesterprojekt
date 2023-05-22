@@ -12,6 +12,8 @@ public class StormScene : MonoBehaviour
     private bool passiveShaking = true;
     private bool mildShaking = false;
     private bool mediumShaking = false;
+    public bool isConnected = false;
+    public bool introEnded = false;
     public PlayerController playerController;
     public LigtningSpawn lightningSpawn;
     public ButtonEvents buttonEvents;
@@ -25,12 +27,18 @@ public class StormScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Storm());
+        //StartCoroutine(Storm());
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isConnected && introEnded)
+        {
+            StartCoroutine(Storm());
+            isConnected = false;
+        }
+
         if (passiveShaking && mildShaking)
         {
             StartCoroutine(passiveShakeMild());

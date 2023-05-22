@@ -743,6 +743,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 115975124539370399, guid: 2cca2b0f03077e541bede0fec76b5cdf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Buckle
+      objectReference: {fileID: 0}
     - target: {fileID: 8275968442698091921, guid: 2cca2b0f03077e541bede0fec76b5cdf,
         type: 3}
       propertyPath: m_RootOrder
@@ -2510,6 +2515,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.07, z: 0.46}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &320329714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9141462278076602398, guid: 2cca2b0f03077e541bede0fec76b5cdf,
+    type: 3}
+  m_PrefabInstance: {fileID: 83479243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &320329720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320329714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c227d81c17c7014ca11b8f443f4d409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stormScene: {fileID: 2103119163}
+  maleBelt: {fileID: 320329714}
+  femaleBelt: {fileID: 1941730927}
+  hand1: {fileID: 693458872}
+  hand2: {fileID: 1554400556}
 --- !u!1 &324738040
 GameObject:
   m_ObjectHideFlags: 0
@@ -39900,6 +39928,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1941730927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115975124539370399, guid: 2cca2b0f03077e541bede0fec76b5cdf,
+    type: 3}
+  m_PrefabInstance: {fileID: 83479243}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1942196856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41227,6 +41261,8 @@ MonoBehaviour:
   badWeather: {fileID: 952545128}
   crewSeatingAnnouncement: {fileID: 840755794}
   passengerSeatingAnnouncement: {fileID: 111133364}
+  isConnected: 0
+  introEnded: 0
   playerController: {fileID: 2024704696}
   lightningSpawn: {fileID: 2103119164}
   buttonEvents: {fileID: 2103119161}

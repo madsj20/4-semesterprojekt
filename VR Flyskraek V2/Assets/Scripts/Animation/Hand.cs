@@ -227,4 +227,25 @@ public class Hand : MonoBehaviour
         isGrabbing = false;
         followTarget = controller.gameObject.transform;
     }
+
+    public void ReleaseBelt()
+    {
+        if (joint1 != null)
+            Destroy(joint1);
+        if (joint2 != null)
+            Destroy(joint2);
+        if (grabPoint != null)
+            Destroy(grabPoint.gameObject);
+
+        if (heldObject != null)
+        {
+            var targetBody = heldObject.GetComponent<Rigidbody>();
+            targetBody.collisionDetectionMode = CollisionDetectionMode.Discrete;
+            targetBody.interpolation = RigidbodyInterpolation.None;
+            heldObject = null;
+        }
+
+        isGrabbing = false;
+        followTarget = controller.gameObject.transform;
+    }
 }
