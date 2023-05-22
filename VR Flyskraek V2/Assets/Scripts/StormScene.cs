@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class StormScene : MonoBehaviour
 {
+    public GameObject badWeather;
+
     public AudioSource crewSeatingAnnouncement;
     public AudioSource passengerSeatingAnnouncement;
     private bool passiveShaking = true;
@@ -47,7 +49,8 @@ public class StormScene : MonoBehaviour
         //shakeTime determines how long on shake takes
         float shakeTime;
         //magnitude determines how much the players head should move
-        float magnitude;
+        float magnitudeY;
+        float magnitudeZ;
         //shakeDelay determines the delay between shakes
         float shakeDelay;
         //ShakePitch changes the pitch of the shake audio to a random value
@@ -55,13 +58,14 @@ public class StormScene : MonoBehaviour
 
         //Randomizing screenshake
         shakeTime = Random.Range(0.05f, 0.15f);
-        magnitude = Random.Range(-0.01f, -0.005f);
+        magnitudeY = Random.Range(-0.01f, -0.005f);
+        magnitudeZ = Random.Range(-0.005f, 0.005f);
         shakeDelay = Random.Range(0.2f, 2.5f);
         shakePitch = Random.Range(0.5f, 1.1f);
 
         shakeSound.pitch = shakePitch;
         shakeSound.Play();
-        playerController.InitScreenShake(magnitude, shakeTime);
+        playerController.InitScreenShake(magnitudeY, magnitudeZ, shakeTime);
         //shakeTime has to be added and multiplied by 2, to give the animation time to finish, bacause shakeTime is used 2 times in the original function in the PlayerController script
         yield return new WaitForSeconds(shakeDelay+(shakeTime*2));
         passiveShaking = true;
@@ -73,7 +77,8 @@ public class StormScene : MonoBehaviour
         //shakeTime determines how long on shake takes
         float shakeTime;
         //magnitude determines how much the players head should move
-        float magnitude;
+        float magnitudeY;
+        float magnitudeZ;
         //shakeDelay determines the delay between shakes
         float shakeDelay;
         //ShakePitch changes the pitch of the shake audio to a random value
@@ -81,13 +86,14 @@ public class StormScene : MonoBehaviour
 
         //Randomizing screenshake
         shakeTime = Random.Range(0.015f, 0.09f);
-        magnitude = Random.Range(-0.04f, -0.03f);
+        magnitudeY = Random.Range(-0.04f, -0.03f);
+        magnitudeZ = Random.Range(-0.02f, 0.02f);
         shakeDelay = Random.Range(0.2f, 2.0f);
         shakePitch = Random.Range(0.5f, 1.1f);
 
         shakeSound.pitch = shakePitch;
         shakeSound.Play();
-        playerController.InitScreenShake(magnitude, shakeTime);
+        playerController.InitScreenShake(magnitudeY, magnitudeZ, shakeTime);
         //shakeTime has to be added and multiplied by 2, to give the animation time to finish, bacause shakeTime is used 2 times in the original function in the PlayerController script
         yield return new WaitForSeconds(shakeDelay + (shakeTime * 2));
         passiveShaking = true;
@@ -150,6 +156,11 @@ public class StormScene : MonoBehaviour
         blink.RunBlinkOff();
         yield return new WaitForSeconds(0.7f);
         buttonEvents.StopBadWeather();
+        badWeather.SetActive(false);
+        //Destroy all instances of lightning
+        GameObject[] lightnings = GameObject.FindGameObjectsWithTag("Lightning");
+        foreach (GameObject lightning in lightnings)
+            GameObject.Destroy(lightning);
 
         //turn of shaking after 5 seconds
         yield return new WaitForSeconds(5);

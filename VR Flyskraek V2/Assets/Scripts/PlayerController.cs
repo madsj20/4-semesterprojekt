@@ -52,26 +52,18 @@ public class PlayerController : MonoBehaviour
     }
 
     //This function can be called in another script to run the screenshake
-    public void InitScreenShake(float magnitude, float duration)
+    public void InitScreenShake(float magnitudeY, float magnitudeZ, float duration)
     {
-        StartCoroutine(ScreenShake(magnitude, duration));
+        StartCoroutine(ScreenShake(magnitudeY, magnitudeZ, duration));
     }
 
     //Change magnitude to choose how much the head should move, and change duration to choose how long the transition lasts
-    public IEnumerator ScreenShake(float magnitude, float duration)
+    public IEnumerator ScreenShake(float magnitudeY, float magnitudeZ, float duration)
     {
-        //Finds difference between the resetTransform rotation and the playerHead rotation, and applies it to the player/XR Origin rotation
-        //var rotationAngleY = resetTransform.rotation.eulerAngles.y - playerHead.transform.rotation.eulerAngles.y;
-        //player.transform.Rotate(0, rotationAngleY, 0);
-        //Finds difference between the resetTransform position and the playerHead postition, and applies it to the player/XR Origin position
-        //var distanceDiff = resetTransform.position - playerHead.transform.position;
-        //player.transform.position += distanceDiff;
-
-
         //saves current player head position
         playerHeadPos = player.transform.position;
         //Creates the new player head position
-        newPlayerHeadPos = new Vector3(playerHeadPos.x, playerHeadPos.y + magnitude, playerHeadPos.z);
+        newPlayerHeadPos = new Vector3(playerHeadPos.x, playerHeadPos.y + magnitudeY, playerHeadPos.z + magnitudeZ);
         
         float time = 0;
         while (time < duration)

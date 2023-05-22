@@ -842,10 +842,11 @@ Transform:
   - {fileID: 1112839493}
   - {fileID: 1194889449}
   - {fileID: 653570949}
+  - {fileID: 1889667742}
   - {fileID: 271707951}
-  - {fileID: 751176854}
   - {fileID: 364028064}
   - {fileID: 427893601}
+  - {fileID: 751176854}
   - {fileID: 464439056}
   - {fileID: 370211838}
   - {fileID: 875037831}
@@ -1883,7 +1884,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &271707953
 Rigidbody:
@@ -2758,7 +2759,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &370211839
 BoxCollider:
@@ -3816,7 +3817,7 @@ Transform:
   - {fileID: 1425529931}
   - {fileID: 489329772}
   m_Father: {fileID: 89988737}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &465145803
 GameObject:
@@ -6191,7 +6192,7 @@ Transform:
   - {fileID: 42927045}
   - {fileID: 1960943}
   m_Father: {fileID: 89988737}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &756668350
 GameObject:
@@ -6299,7 +6300,7 @@ GameObject:
   - component: {fileID: 764875966}
   m_Layer: 0
   m_Name: Lightning
-  m_TagString: Untagged
+  m_TagString: Lightning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7620,7 +7621,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &875037832
 BoxCollider:
@@ -39636,7 +39637,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 89988737}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!212 &1889667743
 SpriteRenderer:
@@ -40097,7 +40098,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -41223,6 +41224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b28dc7987128dcd47b4d123e0766453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  badWeather: {fileID: 952545128}
   crewSeatingAnnouncement: {fileID: 840755794}
   passengerSeatingAnnouncement: {fileID: 111133364}
   playerController: {fileID: 2024704696}
